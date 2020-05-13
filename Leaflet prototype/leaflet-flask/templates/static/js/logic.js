@@ -1,8 +1,8 @@
-// // Link for the earthquakes  
+// // Link for the races  
 const raceTracks = "static/js/race_tracks.json"
 
 
-function createMap(earthquakes){
+function createMap(races){
   // Light map
   let lightmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"http://mapbox.com\">Mapbox</a>",
@@ -30,7 +30,7 @@ function createMap(earthquakes){
   
   // Creating the overlay map
   let overlayMaps = {
-    Earthquakes: earthquakes
+    RaceTracks: races
   };
 
   // Create a baseMaps object to hold the lightmap layer
@@ -44,7 +44,7 @@ function createMap(earthquakes){
   let map = L.map("map",{
     center: [34.0522, -118.2437],
     zoom: 5,
-    layers: [satellitemap, earthquakes]
+    layers: [satellitemap, races]
   });
 
   L.control.layers(baseMaps, overlayMaps, {
