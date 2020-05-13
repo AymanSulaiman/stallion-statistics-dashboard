@@ -1,6 +1,15 @@
 // // Link for the earthquakes  
 const raceTracks = "static/js/race_tracks.json"
 
+var greenIcon = L.icon({
+  iconUrl: 'https://i.imgur.com/A0ohNXt.png',
+  shadowUrl: '',
+  iconSize:     [38, 38], // size of the icon
+  // shadowSize:   [50, 64], // size of the shadow
+  iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 4],  // the same for the shadow
+  popupAnchor:  [-3, -3] // point from which the popup should open relative to the iconAnchor
+});
 
 function createMap(earthquakes){
   // Light map
@@ -30,7 +39,7 @@ function createMap(earthquakes){
   
   // Creating the overlay map
   let overlayMaps = {
-    Earthquakes: earthquakes
+    "Races Tracks": earthquakes
   };
 
   // Create a baseMaps object to hold the lightmap layer
@@ -42,13 +51,13 @@ function createMap(earthquakes){
 
   // creating the map
   let map = L.map("map",{
-    center: [34.0522, -118.2437],
-    zoom: 5,
+    center: [34.4840, -93.0592],
+    zoom: 6,
     layers: [satellitemap, earthquakes]
   });
 
   L.control.layers(baseMaps, overlayMaps, {
-    collapsed: false
+    collapsed: true
   }).addTo(map);
 }
 
@@ -59,8 +68,8 @@ d3.json(raceTracks, function createMarkers(response){
   response.forEach(i => console.log(i))
   raceMarkers = [];
   response.forEach(i => {
-    let raceMarker = L.marker([i.lat, i.lon])
-      .bindPopup(i.nameLong);
+    let raceMarker = L.marker([i.lat, i.lon], {icon: greenIcon})
+      .bindPopup(`${i.nameLong}<br><a href = 'https://www.gulfstreampark.com/' target = _blank>${i.nameShort}</a>`);
     raceMarkers.push(raceMarker)
   });
 
