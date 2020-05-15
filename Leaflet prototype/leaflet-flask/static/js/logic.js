@@ -1,11 +1,14 @@
+const APIKEY = "pk.eyJ1Ijoic3llZHN1bGFpbWFuMTciLCJhIjoiY2thN3RpdDM3MDgyMDNjcXJ4dWp6MGozaCJ9.DPoYZ7GqcMhof3qqmFB6fg";
+
 // // Link for the earthquakes  
-const raceTracks = "static/js/race_tracks.json"
+const raceTracks = "static/js/race_tracks.json";
+// const raceTracks = {{ loc_data }}};
 
 var greenIcon = L.icon({
-  iconUrl: 'https://i.imgur.com/A0ohNXt.png',
+  iconUrl: 'static/images/horse_head.png',
   shadowUrl: '',
   iconSize:     [38, 38], // size of the icon
-  // shadowSize:   [50, 64], // size of the shadow
+  shadowSize:   [50, 50], // size of the shadow
   iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
   shadowAnchor: [4, 4],  // the same for the shadow
   popupAnchor:  [-3, -3] // point from which the popup should open relative to the iconAnchor
@@ -50,7 +53,7 @@ function createMap(earthquakes){
   };
 
   // creating the map
-  let map = L.map("map",{
+  let map = L.map("map-id",{
     center: [34.4840, -93.0592],
     zoom: 6,
     layers: [satellitemap, earthquakes]
@@ -62,10 +65,10 @@ function createMap(earthquakes){
 }
 
 
-
+// createMap
 
 d3.json(raceTracks, function createMarkers(response){
-  // response.forEach(i => console.log(i))
+  response.forEach(i => console.log(i))
   raceMarkers = [];
   response.forEach(i => {
     let raceMarker = L.marker([i.lat, i.lon], {icon: greenIcon})
