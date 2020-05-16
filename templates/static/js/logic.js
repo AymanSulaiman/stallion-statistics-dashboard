@@ -51,7 +51,7 @@ function createMap(earthquakes){
   // creating the map
   let map = L.map("map",{
     center: [34.4840, -93.0592],
-    zoom: 6,
+    zoom: 3,
     layers: [satellitemap, earthquakes]
   });
 
