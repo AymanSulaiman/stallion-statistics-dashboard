@@ -72,7 +72,7 @@ d3.json(raceTracks, function createMarkers(response){
   raceMarkers = [];
   response.forEach(i => {
     let raceMarker = L.marker([i.lat, i.lon], {icon: greenIcon})
-      .bindPopup(`${i.nameLong}<br><a href = 'https://www.gulfstreampark.com/' target = _blank>${i.nameShort}</a>`);
+      .bindPopup(`${i.nameLong}<br><a href = '${i.url}' target = _blank>${i.nameShort}</a>`);
     raceMarkers.push(raceMarker)
   });
 
