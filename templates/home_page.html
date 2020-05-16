@@ -4,16 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Officious_Ox</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
-  </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-mattBlackLight fixed-top">
+    <style>
+        .container {
+          position: relative;
+          width: 100%;
+          max-width: 100%;
+        }
+        
+        .container img {
+          width: 100%;
+          height: auto;
+        }
+        
+        .container .btn {
+          position: absolute;
+          top: 965px;
+          left: 1050px;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          background-color: #800020;
+          color: white;
+          font-size: 30px;
+          font-style: italic;
+          padding: 25px 140px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+        .container .btn:hover {
+          background-color: black;
+        }
+        </style>
+</head>
+    <body>
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-mattBlackLight fixed-top">
     <button class="navbar-toggler sideMenuToggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,50 +67,49 @@
               <span class="text">Home Page</span>
             </a>
           </li>
-            <li class="nav-item">
-              <a href="index.html" class="nav-link px-2">
-                <i class="material-icons icon">map</i>
-                <span class="text">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="op_rt.html" class="nav-link px-2">
-                <i class="material-icons icon">notifications</i>
-                <span class="text">Oaklawn Park RT</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="race_11.html" class="nav-link px-2">
-                <i class="material-icons icon">map</i>
-                <span class="text">Race 11</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="horses.html" class="nav-link px-2">
-                <i class="material-icons icon">search</i>
-                <span class="text">Horses</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="na_horse_rt_map.html" class="nav-link px-2">
-                <i class="material-icons icon">map</i>
-                <span class="text">US Horse RT Map</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="op_rt.html" class="nav-link px-2">
+              <i class="material-icons icon">notifications</i>
+              <span class="text">Oaklawn Park RT</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="race_11.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">Race 11</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="horses.html" class="nav-link px-2">
+              <i class="material-icons icon">search</i>
+              <span class="text">Horses</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="na_horse_rt_map.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">US Horse RT Map</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    
-    <div id="map"></div>
+    </div> -->
 
-    <!-- Leaflet JavaScript -->
-    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-    <!-- D3 JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
-    <!--API Key-->
-    <script type="text/javascript" src="static/js/config.js"></script>
-    <!-- Our JavaScript -->
-    <script type="text/javascript" src="static/js/logic.js"></script>
+    <div class="container">
+      <img src="../ETL/images/Enterportal_bg.png" alt="Snow" style="width:100%">
+      <button type="button" href="na_horse_rt_map.html" class="btn" id="myButton">Stallion Statistics</button>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "na_horse_rt_map.html";
+        };
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -86,4 +119,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js" integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="anonymous" ></script>
   </body>
 </html>
-
