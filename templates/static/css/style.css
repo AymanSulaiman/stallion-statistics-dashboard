@@ -70,7 +70,7 @@ background-color: #f1f1f1;
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Courgette");
 .bg-mattBlackLight {
-  background-color: #303337;
+  background-color: red;
 }
 
 .text-mattBlackLight {
@@ -208,4 +208,14 @@ body {
 .container img {
   width: 100%;
   height: auto;
+}
+
+.container-fluid {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../blurred_bg.png);
+  background-size: cover;
+  max-width: 100%;
+  background-position-x: center;
 }
