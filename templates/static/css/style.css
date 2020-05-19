@@ -196,9 +196,13 @@ body {
 }
 
 .container {
-  position: relative;
+  position: absolute;
   width: 100%;
-  max-width: 400px;
+  height: 100vh;
+  background-image: url(../Enterportal_bg_copy.png);
+  background-size: cover;
+  max-width: 100%;
+  background-position-x: center;
 }
 
 .container img {
