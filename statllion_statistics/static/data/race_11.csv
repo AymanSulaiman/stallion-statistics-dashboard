@@ -1,12 +1,12 @@
-PostPosition,Horse,Trainer,Jockey,Sire,Dam,Owner,SalePrice,LastRaced,Earnings,Starts,Wins,Places,Shows,WEarnings,WStarts,WWins,WPlaces,WShows
-1,Charlatan,Baffert Bob,Garcia M,Speightstown,Authenticity,SF Racing LLC,$7.0k,03/14/2020,67.2,2,2,0,0,0.0,0,0,0,0
-2,My Friends Beer,O'Dwyer Jeremiah,Cannon D,Stay Thirsty,Slew's Quality,Designated Hitters Racing LLC,$0.2k,04/11/2020,80.958,8,1,3,2,10.92,1,0,1,0
-3,Mo Mosa,Maker Michael J,Carmouche K,Uncle Mo,Roughing,Perry & Denise Martin,$0.0k,04/11/2020,47.14,5,1,1,2,0.0,0,0,0,0
-4,Gouverneur Morris,Pletcher Todd A,Velazquez J R,Constitution,Addison Run,WinStar Farm LLC,$6.0k,03/28/2020,197.5,4,2,1,0,49.5,1,1,0,0
-5,Jungle Runner,Asmussen Steven M,Baze T C,Candy Ride*Arg,Minx,Calumet Farm,$0.0k,02/23/2020,107.915,7,2,0,0,0.75,1,0,0,0
-6,Shooters Shoot,Eurton Peter,Talamo J,Competitive Edge,Repeat,Exline-Border Racing LLC,$3.0k,04/11/2020,94.88,6,2,1,1,33.0,1,1,0,0
-7,Wrecking Crew,Miller Peter,Prat F,Sky Kingdom,Truelladeville,Rockingham Ranch,$8.8k,03/07/2020,337.6,6,1,2,1,13.0,1,0,0,0
-8,Anneau d'Or,Wright Blaine,Hernandez J J,Medaglia d'Oro,Walk Close,Peter Redekop B. C. Ltd.,$4.8k,02/15/2020,403.0,4,1,2,0,41.0,1,0,1,0
-9,Winning Impression,Stewart Dallas,Leparoux J R,Paynter,Unbridled Sonya,West Point Thoroughbreds LLC,$0.8k,04/04/2020,43.73,6,1,1,1,25.83,2,1,0,0
-10,Crypto Cash,McPeek Kenneth G,Lanerie C J,Majesticperfection,Cryptos' Best,Tommie M. Lewis & Magdalena Racing,$0.5k,03/14/2020,100.84,5,2,1,0,0.0,0,0,0,0
-11,Basin,Asmussen Steven M,Santana R Jr,Liam's Map,Appenzell,Jackpot Farm,$1.5k,04/11/2020,371.0,5,2,1,1,302.5,3,1,0,1
+,PostPosition,Horse,Trainer,Jockey,Sire,Dam,Owner,SalePrice,LastRaced,Earnings,Starts,Wins,Places,Shows,WEarnings,WStarts,WWins,WPlaces,WShows
+0,1,Charlatan,Baffert Bob,Garcia M,Speightstown,Authenticity,SF Racing LLC,7.0,03/14/2020,67.2,2,2,0,0,0.0,0,0,0,0
+1,2,My Friends Beer,O'Dwyer Jeremiah,Cannon D,Stay Thirsty,Slew's Quality,Designated Hitters Racing LLC,0.2,04/11/2020,80.958,8,1,3,2,10.92,1,0,1,0
+2,3,Mo Mosa,Maker Michael J,Carmouche K,Uncle Mo,Roughing,Perry & Denise Martin,0.0,04/11/2020,47.14,5,1,1,2,0.0,0,0,0,0
+3,4,Gouverneur Morris,Pletcher Todd A,Velazquez J R,Constitution,Addison Run,WinStar Farm LLC,6.0,03/28/2020,197.5,4,2,1,0,49.5,1,1,0,0
+4,5,Jungle Runner,Asmussen Steven M,Baze T C,Candy Ride*Arg,Minx,Calumet Farm,0.0,02/23/2020,107.915,7,2,0,0,0.75,1,0,0,0
+5,6,Shooters Shoot,Eurton Peter,Talamo J,Competitive Edge,Repeat,Exline-Border Racing LLC,3.0,04/11/2020,94.88,6,2,1,1,33.0,1,1,0,0
+6,7,Wrecking Crew,Miller Peter,Prat F,Sky Kingdom,Truelladeville,Rockingham Ranch,8.8,03/07/2020,337.6,6,1,2,1,13.0,1,0,0,0
+7,8,Anneau d'Or,Wright Blaine,Hernandez J J,Medaglia d'Oro,Walk Close,Peter Redekop B. C. Ltd.,4.8,02/15/2020,403.0,4,1,2,0,41.0,1,0,1,0
+8,9,Winning Impression,Stewart Dallas,Leparoux J R,Paynter,Unbridled Sonya,West Point Thoroughbreds LLC,0.8,04/04/2020,43.73,6,1,1,1,25.83,2,1,0,0
+9,10,Crypto Cash,McPeek Kenneth G,Lanerie C J,Majesticperfection,Cryptos' Best,Tommie M. Lewis & Magdalena Racing,0.5,03/14/2020,100.84,5,2,1,0,0.0,0,0,0,0
+10,11,Basin,Asmussen Steven M,Santana R Jr,Liam's Map,Appenzell,Jackpot Farm,1.5,04/11/2020,371.0,5,2,1,1,302.5,3,1,0,1
