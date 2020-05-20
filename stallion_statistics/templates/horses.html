@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stallion Statistics</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-mattBlackLight fixed-top">
+    <button class="navbar-toggler sideMenuToggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <a class="navbar-brand" href="home_page.html">Stallion Statistics</a>
+      <img  id = "horse-logo" src="../ETL/images/whitelogo.png">
+    <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="wrapper d-flex">
+    <div class="sideMenu bg-mattBlackLight">
+      <div class="sidebar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="home_page.html" class="nav-link px-2">
+              <i class="material-icons icon">home</i>
+              <span class="text">Home Page</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="op_rt.html" class="nav-link px-2">
+              <i class="material-icons icon">notifications</i>
+              <span class="text">Oaklawn Park RT</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="race_11.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">Race 11</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="horses.html" class="nav-link px-2">
+              <i class="material-icons icon">search</i>
+              <span class="text">Horses</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="na_horse_rt_map.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">US Horse RT Map</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <main>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-10" style = margin-top:20px;>
+              <div class="bg-mattBlackLight my-2 p-3">
+                <div class="section">
+                  <h1 class="title" style = color:white;>Past Performances</h1>
+                    <div class="table-responsive" style="overflow-x:auto; overflow-y:auto; max-height:470px; max-width: auto;">
+                      <table class="table table-striped", style = "color:black;background-color: white;">
+                        <thead>
+                            <tr style="text-align: right;">
+                              <th></th>
+                              <th>Date</th>
+                              <th>Horse</th>
+                              <th>Jockey</th>
+                              <th>Distance</th>
+                              <th>FinalCall</th>
+                              <th>Beyer</th>
+                              <th>Odds</th>
+                              <th>Starters</th>
+                              <th>Trainer</th>
+                              <th>FirstFracHdths</th>
+                              <th>SecondFracHdths</th>
+                              <th>ThirdFracHdths</th>
+                              <th>FourthFracHdths</th>
+                              <th>FinalTimeHdths</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>1425</th>
+                              <td>03/14/2020</td>
+                              <td>Charlatan</td>
+                              <td>Van Dyke D</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>106</td>
+                              <td>0.30</td>
+                              <td>5</td>
+                              <td>Baffert Bob</td>
+                              <td>23.14</td>
+                              <td>46.86</td>
+                              <td>111.04</td>
+                              <td>123.34</td>
+                              <td>136.24</td>
+                            </tr>
+                            <tr>
+                              <th>1426</th>
+                              <td>02/16/2020</td>
+                              <td>Charlatan</td>
+                              <td>Van Dyke D</td>
+                              <td>6.00</td>
+                              <td>1</td>
+                              <td>105</td>
+                              <td>1.20</td>
+                              <td>4</td>
+                              <td>Baffert Bob</td>
+                              <td>21.89</td>
+                              <td>44.72</td>
+                              <td>56.52</td>
+                              <td>-1.00</td>
+                              <td>108.85</td>
+                            </tr>
+                            <tr>
+                              <th>1427</th>
+                              <td>04/11/2020</td>
+                              <td>My Friends Beer</td>
+                              <td>Cannon D</td>
+                              <td>8.00</td>
+                              <td>3</td>
+                              <td>81</td>
+                              <td>17.70</td>
+                              <td>9</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>23.40</td>
+                              <td>47.38</td>
+                              <td>111.59</td>
+                              <td>124.29</td>
+                              <td>136.70</td>
+                            </tr>
+                            <tr>
+                              <th>1428</th>
+                              <td>03/14/2020</td>
+                              <td>My Friends Beer</td>
+                              <td>Lynch F</td>
+                              <td>8.50</td>
+                              <td>2</td>
+                              <td>75</td>
+                              <td>12.90</td>
+                              <td>6</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>23.72</td>
+                              <td>48.12</td>
+                              <td>113.30</td>
+                              <td>138.17</td>
+                              <td>144.87</td>
+                            </tr>
+                            <tr>
+                              <th>1429</th>
+                              <td>02/02/2020</td>
+                              <td>My Friends Beer</td>
+                              <td>Lynch F</td>
+                              <td>8.00</td>
+                              <td>2</td>
+                              <td>68</td>
+                              <td>11.30</td>
+                              <td>5</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>24.81</td>
+                              <td>48.72</td>
+                              <td>113.16</td>
+                              <td>125.23</td>
+                              <td>138.62</td>
+                            </tr>
+                            <tr>
+                              <th>1430</th>
+                              <td>01/01/2020</td>
+                              <td>My Friends Beer</td>
+                              <td>Lynch F</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>61</td>
+                              <td>0.70</td>
+                              <td>6</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>24.14</td>
+                              <td>47.78</td>
+                              <td>114.29</td>
+                              <td>126.89</td>
+                              <td>139.79</td>
+                            </tr>
+                            <tr>
+                              <th>1431</th>
+                              <td>12/14/2019</td>
+                              <td>My Friends Beer</td>
+                              <td>Russell S</td>
+                              <td>7.00</td>
+                              <td>2</td>
+                              <td>69</td>
+                              <td>4.40</td>
+                              <td>8</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>23.17</td>
+                              <td>47.44</td>
+                              <td>112.78</td>
+                              <td>-1.00</td>
+                              <td>125.22</td>
+                            </tr>
+                            <tr>
+                              <th>1432</th>
+                              <td>11/14/2019</td>
+                              <td>My Friends Beer</td>
+                              <td>Russell S</td>
+                              <td>8.00</td>
+                              <td>3</td>
+                              <td>57</td>
+                              <td>5.70</td>
+                              <td>7</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>23.98</td>
+                              <td>47.82</td>
+                              <td>113.51</td>
+                              <td>125.77</td>
+                              <td>138.45</td>
+                            </tr>
+                            <tr>
+                              <th>1433</th>
+                              <td>11/02/2019</td>
+                              <td>My Friends Beer</td>
+                              <td>Lynch F</td>
+                              <td>6.00</td>
+                              <td>5</td>
+                              <td>40</td>
+                              <td>2.40</td>
+                              <td>6</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>22.60</td>
+                              <td>45.87</td>
+                              <td>58.14</td>
+                              <td>-1.00</td>
+                              <td>110.69</td>
+                            </tr>
+                            <tr>
+                              <th>1434</th>
+                              <td>10/14/2019</td>
+                              <td>My Friends Beer</td>
+                              <td>Lynch F</td>
+                              <td>5.50</td>
+                              <td>4</td>
+                              <td>57</td>
+                              <td>7.20</td>
+                              <td>9</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>22.73</td>
+                              <td>46.07</td>
+                              <td>57.67</td>
+                              <td>-1.00</td>
+                              <td>103.72</td>
+                            </tr>
+                            <tr>
+                              <th>1435</th>
+                              <td>04/11/2020</td>
+                              <td>Mo Mosa</td>
+                              <td>Rocco J S Jr</td>
+                              <td>8.00</td>
+                              <td>3</td>
+                              <td>79</td>
+                              <td>52.30</td>
+                              <td>10</td>
+                              <td>Maker Michael J</td>
+                              <td>23.10</td>
+                              <td>45.87</td>
+                              <td>109.94</td>
+                              <td>123.10</td>
+                              <td>136.66</td>
+                            </tr>
+                            <tr>
+                              <th>1436</th>
+                              <td>03/07/2020</td>
+                              <td>Mo Mosa</td>
+                              <td>Morales P</td>
+                              <td>8.50</td>
+                              <td>12</td>
+                              <td>31</td>
+                              <td>138.60</td>
+                              <td>12</td>
+                              <td>Maker Michael J</td>
+                              <td>23.89</td>
+                              <td>48.16</td>
+                              <td>112.00</td>
+                              <td>136.40</td>
+                              <td>142.63</td>
+                            </tr>
+                            <tr>
+                              <th>1437</th>
+                              <td>02/13/2020</td>
+                              <td>Mo Mosa</td>
+                              <td>Corrales G</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>61</td>
+                              <td>0.80</td>
+                              <td>12</td>
+                              <td>Maker Michael J</td>
+                              <td>23.73</td>
+                              <td>47.65</td>
+                              <td>113.96</td>
+                              <td>127.91</td>
+                              <td>141.22</td>
+                            </tr>
+                            <tr>
+                              <th>1438</th>
+                              <td>01/24/2020</td>
+                              <td>Mo Mosa</td>
+                              <td>Hernandez R M</td>
+                              <td>6.00</td>
+                              <td>3</td>
+                              <td>73</td>
+                              <td>1.00</td>
+                              <td>12</td>
+                              <td>Maker Michael J</td>
+                              <td>22.32</td>
+                              <td>45.62</td>
+                              <td>58.03</td>
+                              <td>-1.00</td>
+                              <td>110.91</td>
+                            </tr>
+                            <tr>
+                              <th>1439</th>
+                              <td>12/31/2019</td>
+                              <td>Mo Mosa</td>
+                              <td>Garcia M</td>
+                              <td>6.50</td>
+                              <td>2</td>
+                              <td>59</td>
+                              <td>2.50</td>
+                              <td>12</td>
+                              <td>Maker Michael J</td>
+                              <td>22.93</td>
+                              <td>46.72</td>
+                              <td>112.54</td>
+                              <td>-1.00</td>
+                              <td>119.39</td>
+                            </tr>
+                            <tr>
+                              <th>1440</th>
+                              <td>03/28/2020</td>
+                              <td>Gouverneur Morris</td>
+                              <td>Velazquez J R</td>
+                              <td>9.00</td>
+                              <td>4</td>
+                              <td>88</td>
+                              <td>5.30</td>
+                              <td>9</td>
+                              <td>Pletcher Todd A</td>
+                              <td>47.95</td>
+                              <td>111.94</td>
+                              <td>136.79</td>
+                              <td>136.79</td>
+                              <td>150.00</td>
+                            </tr>
+                            <tr>
+                              <th>1441</th>
+                              <td>02/14/2020</td>
+                              <td>Gouverneur Morris</td>
+                              <td>Velazquez J R</td>
+                              <td>8.18</td>
+                              <td>1</td>
+                              <td>88</td>
+                              <td>0.50</td>
+                              <td>5</td>
+                              <td>Pletcher Todd A</td>
+                              <td>23.40</td>
+                              <td>47.50</td>
+                              <td>111.33</td>
+                              <td>136.69</td>
+                              <td>138.88</td>
+                            </tr>
+                            <tr>
+                              <th>1442</th>
+                              <td>10/05/2019</td>
+                              <td>Gouverneur Morris</td>
+                              <td>Castellano J J</td>
+                              <td>8.50</td>
+                              <td>2</td>
+                              <td>78</td>
+                              <td>1.50</td>
+                              <td>10</td>
+                              <td>Pletcher Todd A</td>
+                              <td>24.01</td>
+                              <td>47.78</td>
+                              <td>112.46</td>
+                              <td>137.86</td>
+                              <td>144.21</td>
+                            </tr>
+                            <tr>
+                              <th>1443</th>
+                              <td>09/02/2019</td>
+                              <td>Gouverneur Morris</td>
+                              <td>Velazquez J R</td>
+                              <td>5.50</td>
+                              <td>1</td>
+                              <td>83</td>
+                              <td>0.65</td>
+                              <td>7</td>
+                              <td>Pletcher Todd A</td>
+                              <td>22.38</td>
+                              <td>45.98</td>
+                              <td>57.96</td>
+                              <td>-1.00</td>
+                              <td>104.29</td>
+                            </tr>
+                            <tr>
+                              <th>1444</th>
+                              <td>02/23/2020</td>
+                              <td>Jungle Runner</td>
+                              <td>Contreras L</td>
+                              <td>8.50</td>
+                              <td>5</td>
+                              <td>44</td>
+                              <td>2.30</td>
+                              <td>5</td>
+                              <td>Asmussen Steven M</td>
+                              <td>24.26</td>
+                              <td>48.25</td>
+                              <td>113.15</td>
+                              <td>137.74</td>
+                              <td>144.23</td>
+                            </tr>
+                            <tr>
+                              <th>1445</th>
+                              <td>01/24/2020</td>
+                              <td>Jungle Runner</td>
+                              <td>Vazquez R A</td>
+                              <td>8.00</td>
+                              <td>8</td>
+                              <td>63</td>
+                              <td>56.00</td>
+                              <td>9</td>
+                              <td>Asmussen Steven M</td>
+                              <td>24.08</td>
+                              <td>48.96</td>
+                              <td>113.72</td>
+                              <td>126.63</td>
+                              <td>139.63</td>
+                            </tr>
+                            <tr>
+                              <th>1446</th>
+                              <td>12/15/2019</td>
+                              <td>Jungle Runner</td>
+                              <td>Vazquez R A</td>
+                              <td>8.00</td>
+                              <td>4</td>
+                              <td>62</td>
+                              <td>19.50</td>
+                              <td>11</td>
+                              <td>Asmussen Steven M</td>
+                              <td>23.49</td>
+                              <td>47.75</td>
+                              <td>113.34</td>
+                              <td>125.77</td>
+                              <td>137.95</td>
+                            </tr>
+                            <tr>
+                              <th>1447</th>
+                              <td>11/01/2019</td>
+                              <td>Jungle Runner</td>
+                              <td>Vazquez R A</td>
+                              <td>7.00</td>
+                              <td>1</td>
+                              <td>66</td>
+                              <td>2.10</td>
+                              <td>5</td>
+                              <td>Asmussen Steven M</td>
+                              <td>23.55</td>
+                              <td>47.60</td>
+                              <td>112.07</td>
+                              <td>-1.00</td>
+                              <td>124.88</td>
+                            </tr>
+                            <tr>
+                              <th>1448</th>
+                              <td>09/29/2019</td>
+                              <td>Jungle Runner</td>
+                              <td>Santana R Jr</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>60</td>
+                              <td>0.90</td>
+                              <td>9</td>
+                              <td>Asmussen Steven M</td>
+                              <td>25.11</td>
+                              <td>50.23</td>
+                              <td>115.07</td>
+                              <td>127.61</td>
+                              <td>140.25</td>
+                            </tr>
+                            <tr>
+                              <th>1449</th>
+                              <td>08/30/2019</td>
+                              <td>Jungle Runner</td>
+                              <td>Baze T C</td>
+                              <td>7.00</td>
+                              <td>5</td>
+                              <td>58</td>
+                              <td>3.50</td>
+                              <td>8</td>
+                              <td>Asmussen Steven M</td>
+                              <td>22.16</td>
+                              <td>45.52</td>
+                              <td>110.42</td>
+                              <td>-1.00</td>
+                              <td>123.86</td>
+                            </tr>
+                            <tr>
+                              <th>1450</th>
+                              <td>07/27/2019</td>
+                              <td>Jungle Runner</td>
+                              <td>Gazader R</td>
+                              <td>7.00</td>
+                              <td>6</td>
+                              <td>43</td>
+                              <td>18.20</td>
+                              <td>12</td>
+                              <td>Asmussen Steven M</td>
+                              <td>22.92</td>
+                              <td>45.84</td>
+                              <td>109.81</td>
+                              <td>-1.00</td>
+                              <td>121.95</td>
+                            </tr>
+                            <tr>
+                              <th>1451</th>
+                              <td>04/11/2020</td>
+                              <td>Shooters Shoot</td>
+                              <td>Talamo J</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>89</td>
+                              <td>2.60</td>
+                              <td>10</td>
+                              <td>Eurton Peter</td>
+                              <td>23.10</td>
+                              <td>45.87</td>
+                              <td>109.94</td>
+                              <td>123.10</td>
+                              <td>136.66</td>
+                            </tr>
+                            <tr>
+                              <th>1452</th>
+                              <td>03/15/2020</td>
+                              <td>Shooters Shoot</td>
+                              <td>Cedillo A</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>92</td>
+                              <td>5.20</td>
+                              <td>7</td>
+                              <td>Eurton Peter</td>
+                              <td>22.89</td>
+                              <td>46.67</td>
+                              <td>111.69</td>
+                              <td>124.93</td>
+                              <td>138.87</td>
+                            </tr>
+                            <tr>
+                              <th>1453</th>
+                              <td>02/16/2020</td>
+                              <td>Shooters Shoot</td>
+                              <td>Cedillo A</td>
+                              <td>6.00</td>
+                              <td>2</td>
+                              <td>92</td>
+                              <td>9.10</td>
+                              <td>4</td>
+                              <td>Eurton Peter</td>
+                              <td>21.89</td>
+                              <td>44.72</td>
+                              <td>56.52</td>
+                              <td>-1.00</td>
+                              <td>108.85</td>
+                            </tr>
+                            <tr>
+                              <th>1454</th>
+                              <td>01/26/2020</td>
+                              <td>Shooters Shoot</td>
+                              <td>Cedillo A</td>
+                              <td>5.50</td>
+                              <td>4</td>
+                              <td>71</td>
+                              <td>7.60</td>
+                              <td>7</td>
+                              <td>Eurton Peter</td>
+                              <td>21.77</td>
+                              <td>45.29</td>
+                              <td>57.35</td>
+                              <td>-1.00</td>
+                              <td>103.70</td>
+                            </tr>
+                            <tr>
+                              <th>1455</th>
+                              <td>08/28/2019</td>
+                              <td>Shooters Shoot</td>
+                              <td>Talamo J</td>
+                              <td>8.00</td>
+                              <td>4</td>
+                              <td>47</td>
+                              <td>5.40</td>
+                              <td>6</td>
+                              <td>Eurton Peter</td>
+                              <td>22.89</td>
+                              <td>47.18</td>
+                              <td>112.55</td>
+                              <td>125.19</td>
+                              <td>138.58</td>
+                            </tr>
+                            <tr>
+                              <th>1456</th>
+                              <td>08/04/2019</td>
+                              <td>Shooters Shoot</td>
+                              <td>Prat F</td>
+                              <td>5.50</td>
+                              <td>3</td>
+                              <td>57</td>
+                              <td>2.40</td>
+                              <td>6</td>
+                              <td>Eurton Peter</td>
+                              <td>21.83</td>
+                              <td>45.41</td>
+                              <td>57.27</td>
+                              <td>-1.00</td>
+                              <td>103.68</td>
+                            </tr>
+                            <tr>
+                              <th>1457</th>
+                              <td>03/07/2020</td>
+                              <td>Wrecking Crew</td>
+                              <td>Gaffalione T</td>
+                              <td>8.50</td>
+                              <td>5</td>
+                              <td>72</td>
+                              <td>38.50</td>
+                              <td>7</td>
+                              <td>Miller Peter</td>
+                              <td>22.84</td>
+                              <td>46.71</td>
+                              <td>111.32</td>
+                              <td>136.89</td>
+                              <td>143.56</td>
+                            </tr>
+                            <tr>
+                              <th>1458</th>
+                              <td>12/07/2019</td>
+                              <td>Wrecking Crew</td>
+                              <td>Cedillo A</td>
+                              <td>8.50</td>
+                              <td>4</td>
+                              <td>25</td>
+                              <td>9.10</td>
+                              <td>4</td>
+                              <td>Miller Peter</td>
+                              <td>22.47</td>
+                              <td>45.87</td>
+                              <td>110.43</td>
+                              <td>136.37</td>
+                              <td>143.19</td>
+                            </tr>
+                            <tr>
+                              <th>1459</th>
+                              <td>11/01/2019</td>
+                              <td>Wrecking Crew</td>
+                              <td>Lopez P</td>
+                              <td>8.50</td>
+                              <td>3</td>
+                              <td>81</td>
+                              <td>39.10</td>
+                              <td>8</td>
+                              <td>Miller Peter</td>
+                              <td>23.49</td>
+                              <td>47.07</td>
+                              <td>111.60</td>
+                              <td>137.99</td>
+                              <td>144.93</td>
+                            </tr>
+                            <tr>
+                              <th>1460</th>
+                              <td>09/02/2019</td>
+                              <td>Wrecking Crew</td>
+                              <td>Cedillo A</td>
+                              <td>7.00</td>
+                              <td>2</td>
+                              <td>65</td>
+                              <td>9.80</td>
+                              <td>8</td>
+                              <td>Miller Peter</td>
+                              <td>21.89</td>
+                              <td>44.90</td>
+                              <td>111.09</td>
+                              <td>-1.00</td>
+                              <td>125.52</td>
+                            </tr>
+                            <tr>
+                              <th>1461</th>
+                              <td>08/10/2019</td>
+                              <td>Wrecking Crew</td>
+                              <td>Smith M E</td>
+                              <td>6.00</td>
+                              <td>2</td>
+                              <td>79</td>
+                              <td>2.90</td>
+                              <td>6</td>
+                              <td>Miller Peter</td>
+                              <td>22.13</td>
+                              <td>45.28</td>
+                              <td>57.95</td>
+                              <td>-1.00</td>
+                              <td>111.34</td>
+                            </tr>
+                            <tr>
+                              <th>1462</th>
+                              <td>07/27/2019</td>
+                              <td>Wrecking Crew</td>
+                              <td>Prat F</td>
+                              <td>6.00</td>
+                              <td>1</td>
+                              <td>68</td>
+                              <td>0.40</td>
+                              <td>5</td>
+                              <td>Miller Peter</td>
+                              <td>22.40</td>
+                              <td>46.23</td>
+                              <td>58.80</td>
+                              <td>-1.00</td>
+                              <td>112.22</td>
+                            </tr>
+                            <tr>
+                              <th>1463</th>
+                              <td>02/15/2020</td>
+                              <td>Anneau d'Or</td>
+                              <td>Rosario J</td>
+                              <td>9.00</td>
+                              <td>9</td>
+                              <td>66</td>
+                              <td>1.00</td>
+                              <td>11</td>
+                              <td>Wright Blaine</td>
+                              <td>48.57</td>
+                              <td>112.62</td>
+                              <td>138.17</td>
+                              <td>138.17</td>
+                              <td>151.28</td>
+                            </tr>
+                            <tr>
+                              <th>1464</th>
+                              <td>12/07/2019</td>
+                              <td>Anneau d'Or</td>
+                              <td>Hernandez J J</td>
+                              <td>8.50</td>
+                              <td>2</td>
+                              <td>91</td>
+                              <td>1.20</td>
+                              <td>4</td>
+                              <td>Wright Blaine</td>
+                              <td>22.47</td>
+                              <td>45.87</td>
+                              <td>110.43</td>
+                              <td>136.37</td>
+                              <td>143.19</td>
+                            </tr>
+                            <tr>
+                              <th>1465</th>
+                              <td>11/01/2019</td>
+                              <td>Anneau d'Or</td>
+                              <td>Hernandez J J</td>
+                              <td>8.50</td>
+                              <td>2</td>
+                              <td>86</td>
+                              <td>28.00</td>
+                              <td>8</td>
+                              <td>Wright Blaine</td>
+                              <td>23.49</td>
+                              <td>47.07</td>
+                              <td>111.60</td>
+                              <td>137.99</td>
+                              <td>144.93</td>
+                            </tr>
+                            <tr>
+                              <th>1466</th>
+                              <td>09/29/2019</td>
+                              <td>Anneau d'Or</td>
+                              <td>Hernandez J J</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>72</td>
+                              <td>1.20</td>
+                              <td>10</td>
+                              <td>Wright Blaine</td>
+                              <td>23.68</td>
+                              <td>48.01</td>
+                              <td>112.99</td>
+                              <td>125.82</td>
+                              <td>138.11</td>
+                            </tr>
+                            <tr>
+                              <th>1467</th>
+                              <td>04/04/2020</td>
+                              <td>Winning Impression</td>
+                              <td>Rocco J S Jr</td>
+                              <td>8.50</td>
+                              <td>1</td>
+                              <td>82</td>
+                              <td>12.40</td>
+                              <td>10</td>
+                              <td>Stewart Dallas</td>
+                              <td>23.34</td>
+                              <td>47.77</td>
+                              <td>113.43</td>
+                              <td>139.08</td>
+                              <td>145.60</td>
+                            </tr>
+                            <tr>
+                              <th>1468</th>
+                              <td>02/15/2020</td>
+                              <td>Winning Impression</td>
+                              <td>Leparoux J R</td>
+                              <td>9.00</td>
+                              <td>3</td>
+                              <td>78</td>
+                              <td>0.90</td>
+                              <td>8</td>
+                              <td>Stewart Dallas</td>
+                              <td>50.24</td>
+                              <td>114.60</td>
+                              <td>138.85</td>
+                              <td>138.85</td>
+                              <td>151.80</td>
+                            </tr>
+                            <tr>
+                              <th>1469</th>
+                              <td>01/12/2020</td>
+                              <td>Winning Impression</td>
+                              <td>Mena M</td>
+                              <td>8.32</td>
+                              <td>2</td>
+                              <td>75</td>
+                              <td>2.20</td>
+                              <td>8</td>
+                              <td>Stewart Dallas</td>
+                              <td>24.92</td>
+                              <td>49.00</td>
+                              <td>114.29</td>
+                              <td>140.00</td>
+                              <td>144.15</td>
+                            </tr>
+                            <tr>
+                              <th>1470</th>
+                              <td>12/21/2019</td>
+                              <td>Winning Impression</td>
+                              <td>Mena M</td>
+                              <td>8.50</td>
+                              <td>1</td>
+                              <td>77</td>
+                              <td>2.00</td>
+                              <td>7</td>
+                              <td>Stewart Dallas</td>
+                              <td>24.59</td>
+                              <td>49.33</td>
+                              <td>115.53</td>
+                              <td>141.07</td>
+                              <td>147.52</td>
+                            </tr>
+                            <tr>
+                              <th>1471</th>
+                              <td>11/29/2019</td>
+                              <td>Winning Impression</td>
+                              <td>Mena M</td>
+                              <td>6.00</td>
+                              <td>5</td>
+                              <td>67</td>
+                              <td>7.40</td>
+                              <td>7</td>
+                              <td>Stewart Dallas</td>
+                              <td>22.06</td>
+                              <td>46.08</td>
+                              <td>58.12</td>
+                              <td>-1.00</td>
+                              <td>110.73</td>
+                            </tr>
+                            <tr>
+                              <th>1472</th>
+                              <td>11/02/2019</td>
+                              <td>Winning Impression</td>
+                              <td>Mena M</td>
+                              <td>6.00</td>
+                              <td>5</td>
+                              <td>57</td>
+                              <td>11.40</td>
+                              <td>12</td>
+                              <td>Stewart Dallas</td>
+                              <td>21.85</td>
+                              <td>45.85</td>
+                              <td>57.97</td>
+                              <td>-1.00</td>
+                              <td>110.34</td>
+                            </tr>
+                            <tr>
+                              <th>1473</th>
+                              <td>03/14/2020</td>
+                              <td>Crypto Cash</td>
+                              <td>Lanerie C J</td>
+                              <td>8.50</td>
+                              <td>4</td>
+                              <td>70</td>
+                              <td>6.80</td>
+                              <td>7</td>
+                              <td>McPeek Kenneth G</td>
+                              <td>24.13</td>
+                              <td>47.93</td>
+                              <td>111.51</td>
+                              <td>137.23</td>
+                              <td>143.89</td>
+                            </tr>
+                            <tr>
+                              <th>1474</th>
+                              <td>11/21/2019</td>
+                              <td>Crypto Cash</td>
+                              <td>Gaffalione T</td>
+                              <td>8.50</td>
+                              <td>1</td>
+                              <td>79</td>
+                              <td>11.30</td>
+                              <td>10</td>
+                              <td>McPeek Kenneth G</td>
+                              <td>24.82</td>
+                              <td>51.14</td>
+                              <td>118.06</td>
+                              <td>144.41</td>
+                              <td>151.03</td>
+                            </tr>
+                            <tr>
+                              <th>1475</th>
+                              <td>08/24/2019</td>
+                              <td>Crypto Cash</td>
+                              <td>Hernandez B J Jr</td>
+                              <td>8.00</td>
+                              <td>1</td>
+                              <td>74</td>
+                              <td>3.50</td>
+                              <td>8</td>
+                              <td>McPeek Kenneth G</td>
+                              <td>24.62</td>
+                              <td>48.74</td>
+                              <td>112.62</td>
+                              <td>124.70</td>
+                              <td>137.25</td>
+                            </tr>
+                            <tr>
+                              <th>1476</th>
+                              <td>08/04/2019</td>
+                              <td>Crypto Cash</td>
+                              <td>Cohen D</td>
+                              <td>8.00</td>
+                              <td>2</td>
+                              <td>57</td>
+                              <td>7.90</td>
+                              <td>8</td>
+                              <td>McPeek Kenneth G</td>
+                              <td>24.28</td>
+                              <td>48.78</td>
+                              <td>114.39</td>
+                              <td>127.36</td>
+                              <td>140.34</td>
+                            </tr>
+                            <tr>
+                              <th>1477</th>
+                              <td>07/06/2019</td>
+                              <td>Crypto Cash</td>
+                              <td>Gilligan J</td>
+                              <td>8.00</td>
+                              <td>6</td>
+                              <td>42</td>
+                              <td>19.80</td>
+                              <td>9</td>
+                              <td>McPeek Kenneth G</td>
+                              <td>23.71</td>
+                              <td>47.78</td>
+                              <td>112.30</td>
+                              <td>124.32</td>
+                              <td>136.14</td>
+                            </tr>
+                            <tr>
+                              <th>1478</th>
+                              <td>04/11/2020</td>
+                              <td>Basin</td>
+                              <td>Geroux F</td>
+                              <td>9.00</td>
+                              <td>4</td>
+                              <td>79</td>
+                              <td>3.30</td>
+                              <td>13</td>
+                              <td>Asmussen Steven M</td>
+                              <td>45.47</td>
+                              <td>110.92</td>
+                              <td>137.42</td>
+                              <td>137.42</td>
+                              <td>149.89</td>
+                            </tr>
+                            <tr>
+                              <th>1479</th>
+                              <td>03/14/2020</td>
+                              <td>Basin</td>
+                              <td>Castellano J J</td>
+                              <td>8.50</td>
+                              <td>3</td>
+                              <td>84</td>
+                              <td>4.80</td>
+                              <td>8</td>
+                              <td>Asmussen Steven M</td>
+                              <td>22.89</td>
+                              <td>46.00</td>
+                              <td>111.38</td>
+                              <td>138.44</td>
+                              <td>144.97</td>
+                            </tr>
+                            <tr>
+                              <th>1480</th>
+                              <td>09/02/2019</td>
+                              <td>Basin</td>
+                              <td>Ortiz J L</td>
+                              <td>7.00</td>
+                              <td>1</td>
+                              <td>85</td>
+                              <td>3.10</td>
+                              <td>6</td>
+                              <td>Asmussen Steven M</td>
+                              <td>22.66</td>
+                              <td>45.84</td>
+                              <td>110.55</td>
+                              <td>-1.00</td>
+                              <td>123.48</td>
+                            </tr>
+                            <tr>
+                              <th>1481</th>
+                              <td>07/21/2019</td>
+                              <td>Basin</td>
+                              <td>Santana R Jr</td>
+                              <td>6.00</td>
+                              <td>1</td>
+                              <td>86</td>
+                              <td>2.00</td>
+                              <td>10</td>
+                              <td>Asmussen Steven M</td>
+                              <td>22.32</td>
+                              <td>45.38</td>
+                              <td>57.57</td>
+                              <td>-1.00</td>
+                              <td>109.77</td>
+                            </tr>
+                            <tr>
+                              <th>1482</th>
+                              <td>06/14/2019</td>
+                              <td>Basin</td>
+                              <td>Santana R Jr</td>
+                              <td>5.50</td>
+                              <td>2</td>
+                              <td>70</td>
+                              <td>1.10</td>
+                              <td>8</td>
+                              <td>Asmussen Steven M</td>
+                              <td>22.22</td>
+                              <td>45.64</td>
+                              <td>57.75</td>
+                              <td>-1.00</td>
+                              <td>104.23</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "row">
+          <div class="col-lg-10">
+              <div class="bg-mattBlackLight my-2 p-3">
+                <h1 class="title" style = color:white;>Average Speed Chart</h1>
+                <div id="graph"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js" integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+    <script src="plot1.js"></script>
+  </body>
+</html>
