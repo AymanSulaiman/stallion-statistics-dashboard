@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stallion Statistics</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-mattBlackLight fixed-top">
+    <button class="navbar-toggler sideMenuToggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <a class="navbar-brand" href="home_page.html">Stallion Statistics</a>
+      <img  id = "horse-logo" src="../../static/whitelogo.png">
+  </nav>
+  <div class="wrapper d-flex">
+    <div class="sideMenu bg-mattBlackLight">
+      <div class="sidebar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2">
+              <i class="material-icons icon">home</i>
+              <span class="text">Home Page</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../dashboard/dashboard.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../op_rt/op_rt.html" class="nav-link px-2">
+              <i class="material-icons icon">notifications</i>
+              <span class="text">Oaklawn Park RT</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../race_11/race_11.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">Race 11</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../horses/horses.html" class="nav-link px-2">
+              <i class="material-icons icon">search</i>
+              <span class="text">Horses</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../na_horse_rt_map/na_horse_rt_map.html" class="nav-link px-2">
+              <i class="material-icons icon">map</i>
+              <span class="text">US Horse RT Map</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <main>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-10" style = margin-top:20px;>
+              <div class="bg-mattBlackLight my-2 p-3">
+                <div class="section">
+                  <h1 class="title" style = color:white;>Race 11</h1>
+                    <div class="table-responsive" style="overflow-x:auto; overflow-y:auto; max-height:470px; max-width: auto;">
+                      <table class="table table-striped", style = "color:black;background-color: white;">
+                        <thead>
+                            <tr style="text-align: right;">
+                              <th></th>
+                              <th>PostPosition</th>
+                              <th>Horse</th>
+                              <th>Trainer</th>
+                              <th>Jockey</th>
+                              <th>Sire</th>
+                              <th>Dam</th>
+                              <th>Owner</th>
+                              <th>SalePrice</th>
+                              <th>LastRaced</th>
+                              <th>Earnings</th>
+                              <th>Starts</th>
+                              <th>Wins</th>
+                              <th>Places</th>
+                              <th>Shows</th>
+                              <th>WEarnings</th>
+                              <th>WStarts</th>
+                              <th>WWins</th>
+                              <th>WPlaces</th>
+                              <th>WShows</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>137</th>
+                              <td>1</td>
+                              <td>Charlatan</td>
+                              <td>Baffert Bob</td>
+                              <td>Garcia M</td>
+                              <td>Speightstown</td>
+                              <td>Authenticity</td>
+                              <td>SF Racing LLC</td>
+                              <td>$7.0k</td>
+                              <td>03/14/2020</td>
+                              <td>67.200</td>
+                              <td>2</td>
+                              <td>2</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>138</th>
+                              <td>2</td>
+                              <td>My Friends Beer</td>
+                              <td>O'Dwyer Jeremiah</td>
+                              <td>Cannon D</td>
+                              <td>Stay Thirsty</td>
+                              <td>Slew's Quality</td>
+                              <td>Designated Hitters Racing LLC</td>
+                              <td>$0.2k</td>
+                              <td>04/11/2020</td>
+                              <td>80.958</td>
+                              <td>8</td>
+                              <td>1</td>
+                              <td>3</td>
+                              <td>2</td>
+                              <td>10.92</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>1</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>139</th>
+                              <td>3</td>
+                              <td>Mo Mosa</td>
+                              <td>Maker Michael J</td>
+                              <td>Carmouche K</td>
+                              <td>Uncle Mo</td>
+                              <td>Roughing</td>
+                              <td>Perry &amp; Denise Martin</td>
+                              <td>$0.0k</td>
+                              <td>04/11/2020</td>
+                              <td>47.140</td>
+                              <td>5</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>0.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>140</th>
+                              <td>4</td>
+                              <td>Gouverneur Morris</td>
+                              <td>Pletcher Todd A</td>
+                              <td>Velazquez J R</td>
+                              <td>Constitution</td>
+                              <td>Addison Run</td>
+                              <td>WinStar Farm LLC</td>
+                              <td>$6.0k</td>
+                              <td>03/28/2020</td>
+                              <td>197.500</td>
+                              <td>4</td>
+                              <td>2</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>49.50</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>141</th>
+                              <td>5</td>
+                              <td>Jungle Runner</td>
+                              <td>Asmussen Steven M</td>
+                              <td>Baze T C</td>
+                              <td>Candy Ride*Arg</td>
+                              <td>Minx</td>
+                              <td>Calumet Farm</td>
+                              <td>$0.0k</td>
+                              <td>02/23/2020</td>
+                              <td>107.915</td>
+                              <td>7</td>
+                              <td>2</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0.75</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>142</th>
+                              <td>6</td>
+                              <td>Shooters Shoot</td>
+                              <td>Eurton Peter</td>
+                              <td>Talamo J</td>
+                              <td>Competitive Edge</td>
+                              <td>Repeat</td>
+                              <td>Exline-Border Racing LLC</td>
+                              <td>$3.0k</td>
+                              <td>04/11/2020</td>
+                              <td>94.880</td>
+                              <td>6</td>
+                              <td>2</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>33.00</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>143</th>
+                              <td>7</td>
+                              <td>Wrecking Crew</td>
+                              <td>Miller Peter</td>
+                              <td>Prat F</td>
+                              <td>Sky Kingdom</td>
+                              <td>Truelladeville</td>
+                              <td>Rockingham Ranch</td>
+                              <td>$8.8k</td>
+                              <td>03/07/2020</td>
+                              <td>337.600</td>
+                              <td>6</td>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>1</td>
+                              <td>13.00</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>144</th>
+                              <td>8</td>
+                              <td>Anneau d'Or</td>
+                              <td>Wright Blaine</td>
+                              <td>Hernandez J J</td>
+                              <td>Medaglia d'Oro</td>
+                              <td>Walk Close</td>
+                              <td>Peter Redekop B. C. Ltd.</td>
+                              <td>$4.8k</td>
+                              <td>02/15/2020</td>
+                              <td>403.000</td>
+                              <td>4</td>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>0</td>
+                              <td>41.00</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>1</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>145</th>
+                              <td>9</td>
+                              <td>Winning Impression</td>
+                              <td>Stewart Dallas</td>
+                              <td>Leparoux J R</td>
+                              <td>Paynter</td>
+                              <td>Unbridled Sonya</td>
+                              <td>West Point Thoroughbreds LLC</td>
+                              <td>$0.8k</td>
+                              <td>04/04/2020</td>
+                              <td>43.730</td>
+                              <td>6</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>25.83</td>
+                              <td>2</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>146</th>
+                              <td>10</td>
+                              <td>Crypto Cash</td>
+                              <td>McPeek Kenneth G</td>
+                              <td>Lanerie C J</td>
+                              <td>Majesticperfection</td>
+                              <td>Cryptos' Best</td>
+                              <td>Tommie M. Lewis &amp; Magdalena Racing</td>
+                              <td>$0.5k</td>
+                              <td>03/14/2020</td>
+                              <td>100.840</td>
+                              <td>5</td>
+                              <td>2</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>0.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <th>147</th>
+                              <td>11</td>
+                              <td>Basin</td>
+                              <td>Asmussen Steven M</td>
+                              <td>Santana R Jr</td>
+                              <td>Liam's Map</td>
+                              <td>Appenzell</td>
+                              <td>Jackpot Farm</td>
+                              <td>$1.5k</td>
+                              <td>04/11/2020</td>
+                              <td>371.000</td>
+                              <td>5</td>
+                              <td>2</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>302.50</td>
+                              <td>3</td>
+                              <td>1</td>
+                              <td>0</td>
+                              <td>1</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "row">
+          <div class="col-lg-10">
+              <div class="bg-mattBlackLight my-2 p-3">
+                <h1 class="title" style = color:white;>Trainer vs Earnings(USD)</h1>
+                <div id="graph2" style="overflow-x:auto; overflow-y:auto; max-height:470px; max-width: auto;"></div>
+              </div>
+            </div>
+          </div>
+          <div class = "row">
+            <div class="col-lg-10">
+                <div class="bg-mattBlackLight my-2 p-3">
+                  <h1 class="title" style = color:white;>Horse vs Sale Price(USD)</h1>
+                  <div id="graph3" style="overflow-x:auto; overflow-y:auto; max-height:470px; max-width: auto;"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </main>
+    </div>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js" integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+    <script src = "../../static/js/plot1.js"></script>
+    <script src = "../../static/js/plot2.js"></script>
+  </body>
+</html>
