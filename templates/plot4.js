@@ -31,9 +31,9 @@ function buildPlot() {
             }
           ];
         var layout_2 = {
-            title: "",
+            title: "Race Number vs Total Winnings(USD)",
             xaxis: { title: "Race Number" },
-            yaxis: { title: "Total winnings (USD)"}
+            yaxis: { title: "Total Winnings (USD)"}
           };
         Plotly.newPlot('graph5', data_2, layout_2);
     });

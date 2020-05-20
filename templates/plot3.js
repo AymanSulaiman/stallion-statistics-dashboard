@@ -29,8 +29,8 @@ function buildPlot() {
           
           var layout = {
             title:'Race Number vs Distance (Furlong)',
-            xaxis: { title: "Horse Name", range: [0,15] },
-            yaxis: { title: "Sale Price (USD)", range: [0,12]},
+            xaxis: { title: "Race Number", range: [0,15] },
+            yaxis: { title: "Distance (Furlong)", range: [0,12]},
           };
           
           Plotly.newPlot('graph4', data, layout); 

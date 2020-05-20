@@ -17,14 +17,11 @@
   </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-mattBlackLight fixed-top">
-    <button class="navbar-toggler sideMenuToggler" type="button">
+    <button class="navbar-toggler sideMenuToggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="home_page.html">Stallion Statistics</a>
     <img  id = "horse-logo" src="../ETL/images/whitelogo.png">
-    <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
   </nav>
   <div class="wrapper d-flex">
     <div class="sideMenu bg-mattBlackLight">
@@ -73,36 +70,35 @@
           <div class="container-fluid">
             <div class="row" style = margin-top:20px;>
               <div class="col-md-4 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h4 class="mb-2">Visualization 1</h4>
-                  <div id="graph2"></div>
-                </div>
-              </div>
-              <div class="col-md-4 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h4 class="mb-2">Visualization 2</h4>
-                  <div id="graph"></div>
-                </div>
-              </div>
-              <div class="col-md-4 my-3">
                 <div class="bg-mattBlackLight p-3">
-                  <h4 class="mb-2">Visualization 3</h4>
-                  <div id="graph3"></div>
+                  <a href = "race_11.html"><h3 class="mb-2">Visualization 1</h3></a>
+                  <div id="graph3" style="overflow-x:auto; overflow-y:auto; max-height:450px; max-width: auto;"></div>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <div class="bg-mattBlackLight px-3 py-3">
+                  <a href = "horses.html"><h3 class="mb-2">Visualization 2</h3></a>
+                  <div id="graph" style="overflow-x:auto; overflow-y:auto; max-height:450px; max-width: auto;"></div>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <div class="bg-mattBlackLight px-3 py-3">
+                  <a href = "race_11.html"><h3 class="mb-2">Visualization 3</h3></a>
+                  <div id="graph2"style="overflow-x:auto; overflow-y:auto; max-height:450px; max-width: auto;"></div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="bg-mattBlackLight my-2 p-3">
-                  <h4 class="mb-2">US Horse RT Map</h4>
-                  <div id="map" style = "width: 720px; height: 500px; margin: 0 auto 0 auto; margin-top: 20px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                  text-align: center; margin-left: 20px;"></div>
+                  <a href = "na_horse_rt_map.html"><h3 class="mb-2">US Horse Race Track Map</h3></a>
+                  <div id="map" style = " width: 820px; height: 450px; margin: 0 auto 0 auto; margin-top: 20px;text-align: center; margin-left: 20px;"></div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="bg-mattBlackLight my-2 p-3">
-                  <h4 class="mb-2">Visualization 4</h4>
-                  <div id="graph5"></div>
+                  <a href = "op_rt.html"><h3 class="mb-2">Visualization 4</h3></a>
+                  <div id="graph5" style="overflow-x:auto; overflow-y:auto; max-height:450px; max-width: auto;" ></div>
                 </div>
               </div>
             </div>
@@ -131,6 +127,11 @@
     <script src="plot3.js"></script>
     <script src="plot4.js"></script>
   </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
 </html>
 
 

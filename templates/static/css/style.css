@@ -188,7 +188,7 @@ body {
     margin-right: 0;
   }
   .wrapper.active .sideMenu .nav-link .text {
-    display: none;
+    display: active;
   }
   .wrapper.active .content {
     margin-left: 5rem;
