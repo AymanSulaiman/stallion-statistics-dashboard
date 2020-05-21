@@ -13,7 +13,8 @@ The premise of our project is to sort through and break down the most valuable d
 
   2. Create an interactive Map that uses longitude and latitude for track location in North America.
 
-  3. Present important race variables in easy-to-read charts.4.Use our understanding of key race variables to help deduce which horse will have the best chances of winning.
+  3. Present important race variables in easy-to-read charts.
+  4. Use our understanding of key race variables to help deduce which horse will have the best chances of winning.
 
 
 What are our sources of Data?
