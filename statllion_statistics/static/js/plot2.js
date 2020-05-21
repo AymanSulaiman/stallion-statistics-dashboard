@@ -54,7 +54,7 @@ function buildPlot() {
           ];
         var layout_2 = {
             title: "Horses vs Sale Price",
-            xaxis: { title: "Horse Name" },
+            xaxis: { title: "" },
             yaxis: { title: "Sale Price (USD)"}
           };
         Plotly.newPlot('graph3', data_2, layout_2);

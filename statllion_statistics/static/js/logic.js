@@ -1,7 +1,7 @@
 const raceTracks = "../../static/data/race_tracks.json"
 
 var greenIcon = L.icon({
-  iconUrl: 'https://i.imgur.com/A0ohNXt.png',
+  iconUrl: '../../static/images/horse_pin.png',
   shadowUrl: '',
   iconSize:     [38, 38], // size of the icon
   // shadowSize:   [50, 64], // size of the shadow

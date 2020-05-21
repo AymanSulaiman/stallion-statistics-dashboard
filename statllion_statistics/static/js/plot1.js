@@ -45,7 +45,7 @@ function buildPlot() {
           ];
         var layout = {
             title: "Horse vs Beyer(Avg Speed) ",
-            xaxis: { title: "Horse Name" },
+            xaxis: { title: "" },
             yaxis: { title: "Beyer (Average Speed)"}
           };
 
