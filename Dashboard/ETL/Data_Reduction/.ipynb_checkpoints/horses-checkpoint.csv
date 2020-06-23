@@ -1,0 +1,59 @@
+Date,Horse,Jockey,Distance,FinalCall,Beyer,Odds,Starters,Trainer,FirstFracHdths,SecondFracHdths,ThirdFracHdths,FourthFracHdths,FinalTimeHdths
+03/14/2020,Charlatan,Van Dyke D,8.0,1,106,0.3,5,Baffert Bob,23.14,46.86,111.04,123.34,136.24
+02/16/2020,Charlatan,Van Dyke D,6.0,1,105,1.2,4,Baffert Bob,21.89,44.72,56.52,-1.0,108.85
+04/11/2020,My Friends Beer,Cannon D,8.0,3,81,17.7,9,O'Dwyer Jeremiah,23.4,47.38,111.59,124.29,136.7
+03/14/2020,My Friends Beer,Lynch F,8.5,2,75,12.9,6,O'Dwyer Jeremiah,23.72,48.12,113.3,138.17,144.87
+02/02/2020,My Friends Beer,Lynch F,8.0,2,68,11.3,5,O'Dwyer Jeremiah,24.81,48.72,113.16,125.23,138.62
+01/01/2020,My Friends Beer,Lynch F,8.0,1,61,0.7,6,O'Dwyer Jeremiah,24.14,47.78,114.29,126.89,139.79
+12/14/2019,My Friends Beer,Russell S,7.0,2,69,4.4,8,O'Dwyer Jeremiah,23.17,47.44,112.78,-1.0,125.22
+11/14/2019,My Friends Beer,Russell S,8.0,3,57,5.7,7,O'Dwyer Jeremiah,23.98,47.82,113.51,125.77,138.45
+11/02/2019,My Friends Beer,Lynch F,6.0,5,40,2.4,6,O'Dwyer Jeremiah,22.6,45.87,58.14,-1.0,110.69
+10/14/2019,My Friends Beer,Lynch F,5.5,4,57,7.2,9,O'Dwyer Jeremiah,22.73,46.07,57.67,-1.0,103.72
+04/11/2020,Mo Mosa,Rocco J S Jr,8.0,3,79,52.3,10,Maker Michael J,23.1,45.87,109.94,123.1,136.66
+03/07/2020,Mo Mosa,Morales P,8.5,12,31,138.6,12,Maker Michael J,23.89,48.16,112.0,136.4,142.63
+02/13/2020,Mo Mosa,Corrales G,8.0,1,61,0.8,12,Maker Michael J,23.73,47.65,113.96,127.91,141.22
+01/24/2020,Mo Mosa,Hernandez R M,6.0,3,73,1.0,12,Maker Michael J,22.32,45.62,58.03,-1.0,110.91
+12/31/2019,Mo Mosa,Garcia M,6.5,2,59,2.5,12,Maker Michael J,22.93,46.72,112.54,-1.0,119.39
+03/28/2020,Gouverneur Morris,Velazquez J R,9.0,4,88,5.3,9,Pletcher Todd A,47.95,111.94,136.79,136.79,150.0
+02/14/2020,Gouverneur Morris,Velazquez J R,8.18,1,88,0.5,5,Pletcher Todd A,23.4,47.5,111.33,136.69,138.88
+10/05/2019,Gouverneur Morris,Castellano J J,8.5,2,78,1.5,10,Pletcher Todd A,24.01,47.78,112.46,137.86,144.21
+09/02/2019,Gouverneur Morris,Velazquez J R,5.5,1,83,0.65,7,Pletcher Todd A,22.38,45.98,57.96,-1.0,104.29
+02/23/2020,Jungle Runner,Contreras L,8.5,5,44,2.3,5,Asmussen Steven M,24.26,48.25,113.15,137.74,144.23
+01/24/2020,Jungle Runner,Vazquez R A,8.0,8,63,56.0,9,Asmussen Steven M,24.08,48.96,113.72,126.63,139.63
+12/15/2019,Jungle Runner,Vazquez R A,8.0,4,62,19.5,11,Asmussen Steven M,23.49,47.75,113.34,125.77,137.95
+11/01/2019,Jungle Runner,Vazquez R A,7.0,1,66,2.1,5,Asmussen Steven M,23.55,47.6,112.07,-1.0,124.88
+09/29/2019,Jungle Runner,Santana R Jr,8.0,1,60,0.9,9,Asmussen Steven M,25.11,50.23,115.07,127.61,140.25
+08/30/2019,Jungle Runner,Baze T C,7.0,5,58,3.5,8,Asmussen Steven M,22.16,45.52,110.42,-1.0,123.86
+07/27/2019,Jungle Runner,Gazader R,7.0,6,43,18.2,12,Asmussen Steven M,22.92,45.84,109.81,-1.0,121.95
+04/11/2020,Shooters Shoot,Talamo J,8.0,1,89,2.6,10,Eurton Peter,23.1,45.87,109.94,123.1,136.66
+03/15/2020,Shooters Shoot,Cedillo A,8.0,1,92,5.2,7,Eurton Peter,22.89,46.67,111.69,124.93,138.87
+02/16/2020,Shooters Shoot,Cedillo A,6.0,2,92,9.1,4,Eurton Peter,21.89,44.72,56.52,-1.0,108.85
+01/26/2020,Shooters Shoot,Cedillo A,5.5,4,71,7.6,7,Eurton Peter,21.77,45.29,57.35,-1.0,103.7
+08/28/2019,Shooters Shoot,Talamo J,8.0,4,47,5.4,6,Eurton Peter,22.89,47.18,112.55,125.19,138.58
+08/04/2019,Shooters Shoot,Prat F,5.5,3,57,2.4,6,Eurton Peter,21.83,45.41,57.27,-1.0,103.68
+03/07/2020,Wrecking Crew,Gaffalione T,8.5,5,72,38.5,7,Miller Peter,22.84,46.71,111.32,136.89,143.56
+12/07/2019,Wrecking Crew,Cedillo A,8.5,4,25,9.1,4,Miller Peter,22.47,45.87,110.43,136.37,143.19
+11/01/2019,Wrecking Crew,Lopez P,8.5,3,81,39.1,8,Miller Peter,23.49,47.07,111.6,137.99,144.93
+09/02/2019,Wrecking Crew,Cedillo A,7.0,2,65,9.8,8,Miller Peter,21.89,44.9,111.09,-1.0,125.52
+08/10/2019,Wrecking Crew,Smith M E,6.0,2,79,2.9,6,Miller Peter,22.13,45.28,57.95,-1.0,111.34
+07/27/2019,Wrecking Crew,Prat F,6.0,1,68,0.4,5,Miller Peter,22.4,46.23,58.8,-1.0,112.22
+02/15/2020,Anneau d'Or,Rosario J,9.0,9,66,1.0,11,Wright Blaine,48.57,112.62,138.17,138.17,151.28
+12/07/2019,Anneau d'Or,Hernandez J J,8.5,2,91,1.2,4,Wright Blaine,22.47,45.87,110.43,136.37,143.19
+11/01/2019,Anneau d'Or,Hernandez J J,8.5,2,86,28.0,8,Wright Blaine,23.49,47.07,111.6,137.99,144.93
+09/29/2019,Anneau d'Or,Hernandez J J,8.0,1,72,1.2,10,Wright Blaine,23.68,48.01,112.99,125.82,138.11
+04/04/2020,Winning Impression,Rocco J S Jr,8.5,1,82,12.4,10,Stewart Dallas,23.34,47.77,113.43,139.08,145.6
+02/15/2020,Winning Impression,Leparoux J R,9.0,3,78,0.9,8,Stewart Dallas,50.24,114.6,138.85,138.85,151.8
+01/12/2020,Winning Impression,Mena M,8.32,2,75,2.2,8,Stewart Dallas,24.92,49.0,114.29,140.0,144.15
+12/21/2019,Winning Impression,Mena M,8.5,1,77,2.0,7,Stewart Dallas,24.59,49.33,115.53,141.07,147.52
+11/29/2019,Winning Impression,Mena M,6.0,5,67,7.4,7,Stewart Dallas,22.06,46.08,58.12,-1.0,110.73
+11/02/2019,Winning Impression,Mena M,6.0,5,57,11.4,12,Stewart Dallas,21.85,45.85,57.97,-1.0,110.34
+03/14/2020,Crypto Cash,Lanerie C J,8.5,4,70,6.8,7,McPeek Kenneth G,24.13,47.93,111.51,137.23,143.89
+11/21/2019,Crypto Cash,Gaffalione T,8.5,1,79,11.3,10,McPeek Kenneth G,24.82,51.14,118.06,144.41,151.03
+08/24/2019,Crypto Cash,Hernandez B J Jr,8.0,1,74,3.5,8,McPeek Kenneth G,24.62,48.74,112.62,124.7,137.25
+08/04/2019,Crypto Cash,Cohen D,8.0,2,57,7.9,8,McPeek Kenneth G,24.28,48.78,114.39,127.36,140.34
+07/06/2019,Crypto Cash,Gilligan J,8.0,6,42,19.8,9,McPeek Kenneth G,23.71,47.78,112.3,124.32,136.14
+04/11/2020,Basin,Geroux F,9.0,4,79,3.3,13,Asmussen Steven M,45.47,110.92,137.42,137.42,149.89
+03/14/2020,Basin,Castellano J J,8.5,3,84,4.8,8,Asmussen Steven M,22.89,46.0,111.38,138.44,144.97
+09/02/2019,Basin,Ortiz J L,7.0,1,85,3.1,6,Asmussen Steven M,22.66,45.84,110.55,-1.0,123.48
+07/21/2019,Basin,Santana R Jr,6.0,1,86,2.0,10,Asmussen Steven M,22.32,45.38,57.57,-1.0,109.77
+06/14/2019,Basin,Santana R Jr,5.5,2,70,1.1,8,Asmussen Steven M,22.22,45.64,57.75,-1.0,104.23
