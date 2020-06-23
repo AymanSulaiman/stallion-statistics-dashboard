@@ -1,0 +1,581 @@
+"RCTrack","RCDate","RCRace","Horse","Trainer","Category","Starts","WinPct","ROI"
+"GP",05/02/2020,1,"Coach Temple","Joseph Saffie A Jr","1stStart",29,0.14,1.50
+"GP",05/02/2020,1,"Coach Temple","Joseph Saffie A Jr","1stTurf",30,0.17,1.71
+"GP",05/02/2020,1,"Coach Temple","Joseph Saffie A Jr","Turf",223,0.22,1.91
+"GP",05/02/2020,1,"Coach Temple","Joseph Saffie A Jr","Routes",243,0.25,2.07
+"GP",05/02/2020,1,"Coach Temple","Joseph Saffie A Jr","MdnSpWt",47,0.17,1.58
+"GP",05/02/2020,1,"Constitutional Pal","Cibelli Jane","+180Days",19,0.16,0.79
+"GP",05/02/2020,1,"Constitutional Pal","Cibelli Jane","Turf",223,0.17,1.81
+"GP",05/02/2020,1,"Constitutional Pal","Cibelli Jane","Routes",160,0.19,2.21
+"GP",05/02/2020,1,"Constitutional Pal","Cibelli Jane","MdnSpWt",28,0.07,0.31
+"GP",05/02/2020,1,"East Lex","Maker Michael J","61-180Days",163,0.17,1.48
+"GP",05/02/2020,1,"East Lex","Maker Michael J","Turf",934,0.16,1.38
+"GP",05/02/2020,1,"East Lex","Maker Michael J","Routes",1025,0.17,1.45
+"GP",05/02/2020,1,"East Lex","Maker Michael J","MdnSpWt",229,0.13,1.15
+"GP",05/02/2020,1,"Elusive Ruler","Wilkes Ian R","61-180Days",77,0.09,1.34
+"GP",05/02/2020,1,"Elusive Ruler","Wilkes Ian R","1stTurf",67,0.06,1.63
+"GP",05/02/2020,1,"Elusive Ruler","Wilkes Ian R","Dirt/Turf",83,0.11,2.01
+"GP",05/02/2020,1,"Elusive Ruler","Wilkes Ian R","Turf",252,0.13,1.80
+"GP",05/02/2020,1,"Elusive Ruler","Wilkes Ian R","Routes",348,0.14,1.82
+"GP",05/02/2020,1,"Elusive Ruler","Wilkes Ian R","MdnSpWt",252,0.10,1.78
+"GP",05/02/2020,1,"Hero d'Oro","Brown Chad C","61-180Days",186,0.26,1.64
+"GP",05/02/2020,1,"Hero d'Oro","Brown Chad C","Mdn2ndStart",98,0.35,2.00
+"GP",05/02/2020,1,"Hero d'Oro","Brown Chad C","1stTurf",126,0.26,2.13
+"GP",05/02/2020,1,"Hero d'Oro","Brown Chad C","Dirt/Turf",47,0.26,2.50
+"GP",05/02/2020,1,"Hero d'Oro","Brown Chad C","Turf",591,0.27,1.77
+"GP",05/02/2020,1,"Hero d'Oro","Brown Chad C","Routes",710,0.27,1.65
+"GP",05/02/2020,1,"Irked","Mott William I","2OffOver180",27,0.30,2.31
+"GP",05/02/2020,1,"Irked","Mott William I","Sprint/Route",58,0.16,1.56
+"GP",05/02/2020,1,"Irked","Mott William I","Turf",346,0.13,1.30
+"GP",05/02/2020,1,"Irked","Mott William I","Routes",461,0.17,1.86
+"GP",05/02/2020,1,"Irked","Mott William I","MdnSpWt",250,0.14,1.60
+"GP",05/02/2020,1,"Lascari","De La Cerda Armando","Mdn2ndStart",14,0.00,0.00
+"GP",05/02/2020,1,"Lascari","De La Cerda Armando","Turf",146,0.18,2.86
+"GP",05/02/2020,1,"Lascari","De La Cerda Armando","Routes",138,0.12,1.56
+"GP",05/02/2020,1,"Lascari","De La Cerda Armando","MdnSpWt",15,0.27,10.41
+"GP",05/02/2020,1,"Maine","Servis John C","2Off45-180",67,0.24,1.67
+"GP",05/02/2020,1,"Maine","Servis John C","Sprint/Route",58,0.12,0.89
+"GP",05/02/2020,1,"Maine","Servis John C","31-60Days",147,0.23,1.92
+"GP",05/02/2020,1,"Maine","Servis John C","Turf",94,0.05,0.95
+"GP",05/02/2020,1,"Maine","Servis John C","Routes",237,0.14,1.35
+"GP",05/02/2020,1,"Maine","Servis John C","MdnSpWt",99,0.17,1.52
+"GP",05/02/2020,1,"Mighty Tough","Hills Timothy A","Mdn2ndStart",13,0.08,0.31
+"GP",05/02/2020,1,"Mighty Tough","Hills Timothy A","31-60Days",46,0.09,1.53
+"GP",05/02/2020,1,"Mighty Tough","Hills Timothy A","Turf",77,0.06,1.07
+"GP",05/02/2020,1,"Mighty Tough","Hills Timothy A","Routes",80,0.10,1.19
+"GP",05/02/2020,1,"Mighty Tough","Hills Timothy A","MdnSpWt",52,0.06,1.14
+"GP",05/02/2020,1,"Turn of Events","Maker Michael J","31-60Days",479,0.15,1.33
+"GP",05/02/2020,1,"Turn of Events","Maker Michael J","Turf",934,0.16,1.38
+"GP",05/02/2020,1,"Turn of Events","Maker Michael J","Routes",1025,0.17,1.45
+"GP",05/02/2020,1,"Turn of Events","Maker Michael J","MdnSpWt",229,0.13,1.15
+"GP",05/02/2020,1,"Win d'Oro","Casse Mark","61-180Days",212,0.13,1.48
+"GP",05/02/2020,1,"Win d'Oro","Casse Mark","Dirt/Turf",202,0.12,1.27
+"GP",05/02/2020,1,"Win d'Oro","Casse Mark","Turf",755,0.15,1.59
+"GP",05/02/2020,1,"Win d'Oro","Casse Mark","Routes",758,0.16,1.62
+"GP",05/02/2020,1,"Win d'Oro","Casse Mark","MdnSpWt",506,0.17,1.75
+"GP",05/02/2020,1,"Wind Ridge","Clement Christophe","2Off45-180",64,0.19,1.75
+"GP",05/02/2020,1,"Wind Ridge","Clement Christophe","Dirt",136,0.18,1.50
+"GP",05/02/2020,1,"Wind Ridge","Clement Christophe","Routes",359,0.17,1.61
+"GP",05/02/2020,1,"Wind Ridge","Clement Christophe","MdnSpWt",221,0.22,2.07
+"GP",05/02/2020,2,"American Rock Salt","Miller Herbert","31-60Days",19,0.05,0.83
+"GP",05/02/2020,2,"American Rock Salt","Miller Herbert","Dirt",60,0.05,0.56
+"GP",05/02/2020,2,"American Rock Salt","Miller Herbert","Sprint",75,0.07,0.63
+"GP",05/02/2020,2,"American Rock Salt","Miller Herbert","Claim",56,0.09,1.34
+"GP",05/02/2020,2,"Baba Tobi","Rodriguez Hector F","Dirt",16,0.00,0.00
+"GP",05/02/2020,2,"Baba Tobi","Rodriguez Hector F","Sprint",13,0.00,0.00
+"GP",05/02/2020,2,"Baba Tobi","Rodriguez Hector F","Claim",14,0.00,0.00
+"GP",05/02/2020,2,"Fives Wild","Gracida Ruben","Turf/Dirt",15,0.33,2.17
+"GP",05/02/2020,2,"Fives Wild","Gracida Ruben","Route/Sprint",16,0.50,4.24
+"GP",05/02/2020,2,"Fives Wild","Gracida Ruben","31-60Days",21,0.29,2.73
+"GP",05/02/2020,2,"Fives Wild","Gracida Ruben","Dirt",41,0.29,2.33
+"GP",05/02/2020,2,"Fives Wild","Gracida Ruben","Sprint",48,0.29,2.57
+"GP",05/02/2020,2,"Fives Wild","Gracida Ruben","Claim",78,0.19,1.93
+"GP",05/02/2020,2,"Gran Causeway","Fuentes Mauricio","Dirt",23,0.00,0.00
+"GP",05/02/2020,2,"Gran Causeway","Fuentes Mauricio","Sprint",34,0.09,1.39
+"GP",05/02/2020,2,"Gran Causeway","Fuentes Mauricio","Claim",34,0.06,1.26
+"GP",05/02/2020,2,"King's Castle","Sano Antonio","1stW/Trn",46,0.11,0.99
+"GP",05/02/2020,2,"King's Castle","Sano Antonio","+180Days",14,0.14,1.01
+"GP",05/02/2020,2,"King's Castle","Sano Antonio","Dirt",447,0.11,1.09
+"GP",05/02/2020,2,"King's Castle","Sano Antonio","Sprint",492,0.09,1.29
+"GP",05/02/2020,2,"King's Castle","Sano Antonio","Claim",328,0.12,2.01
+"GP",05/02/2020,2,"London Werewolf","Morrison Michael S","Dirt",21,0.10,1.28
+"GP",05/02/2020,2,"London Werewolf","Morrison Michael S","Sprint",18,0.11,1.49
+"GP",05/02/2020,2,"London Werewolf","Morrison Michael S","Claim",22,0.05,0.85
+"GP",05/02/2020,2,"Luckytobeinamerica","Schettino Dominick A","Dirt",102,0.18,2.18
+"GP",05/02/2020,2,"Luckytobeinamerica","Schettino Dominick A","Sprint",84,0.15,2.22
+"GP",05/02/2020,2,"Luckytobeinamerica","Schettino Dominick A","Claim",67,0.18,2.22
+"GP",05/02/2020,2,"Nacho Papa","Alvarado Juan","31-60Days",61,0.18,1.58
+"GP",05/02/2020,2,"Nacho Papa","Alvarado Juan","Dirt",154,0.14,2.01
+"GP",05/02/2020,2,"Nacho Papa","Alvarado Juan","Sprint",123,0.12,1.62
+"GP",05/02/2020,2,"Nacho Papa","Alvarado Juan","Claim",48,0.21,3.64
+"GP",05/02/2020,2,"Sighted","Rose Barry R","Dirt",37,0.08,0.49
+"GP",05/02/2020,2,"Sighted","Rose Barry R","Sprint",25,0.08,1.05
+"GP",05/02/2020,2,"Sighted","Rose Barry R","Claim",60,0.12,1.33
+"GP",05/02/2020,3,"Ajhar","Pletcher Todd A","1stW/Trn",30,0.23,1.68
+"GP",05/02/2020,3,"Ajhar","Pletcher Todd A","61-180Days",106,0.24,1.27
+"GP",05/02/2020,3,"Ajhar","Pletcher Todd A","Dirt",648,0.23,1.53
+"GP",05/02/2020,3,"Ajhar","Pletcher Todd A","Routes",748,0.21,1.50
+"GP",05/02/2020,3,"Ajhar","Pletcher Todd A","MdnSpWt",343,0.22,1.54
+"GP",05/02/2020,3,"Cornbread Kingdom","Romans Dale","Dirt",332,0.12,1.06
+"GP",05/02/2020,3,"Cornbread Kingdom","Romans Dale","Routes",286,0.10,0.93
+"GP",05/02/2020,3,"Cornbread Kingdom","Romans Dale","MdnSpWt",124,0.06,0.63
+"GP",05/02/2020,3,"Hard Lighting","Delgado Alexis","Mdn2ndStart",13,0.15,2.00
+"GP",05/02/2020,3,"Hard Lighting","Delgado Alexis","Sprint/Route",17,0.18,9.67
+"GP",05/02/2020,3,"Hard Lighting","Delgado Alexis","31-60Days",28,0.11,1.01
+"GP",05/02/2020,3,"Hard Lighting","Delgado Alexis","Dirt",98,0.14,2.54
+"GP",05/02/2020,3,"Hard Lighting","Delgado Alexis","Routes",63,0.17,4.35
+"GP",05/02/2020,3,"Hard Lighting","Delgado Alexis","MdnSpWt",20,0.05,0.67
+"GP",05/02/2020,3,"Newsworthy","Mott William I","1stStart",100,0.09,1.40
+"GP",05/02/2020,3,"Newsworthy","Mott William I","Dirt",315,0.19,2.17
+"GP",05/02/2020,3,"Newsworthy","Mott William I","Routes",461,0.17,1.86
+"GP",05/02/2020,3,"Newsworthy","Mott William I","MdnSpWt",250,0.14,1.60
+"GP",05/02/2020,3,"Or'effice","Hennig Mark","2Off45-180",49,0.14,1.75
+"GP",05/02/2020,3,"Or'effice","Hennig Mark","Dirt",203,0.14,1.20
+"GP",05/02/2020,3,"Or'effice","Hennig Mark","Routes",166,0.11,0.95
+"GP",05/02/2020,3,"Or'effice","Hennig Mark","MdnSpWt",152,0.10,0.93
+"GP",05/02/2020,3,"Rag Tag","Pletcher Todd A","Turf/Dirt",60,0.27,1.52
+"GP",05/02/2020,3,"Rag Tag","Pletcher Todd A","Dirt",648,0.23,1.53
+"GP",05/02/2020,3,"Rag Tag","Pletcher Todd A","Routes",748,0.21,1.50
+"GP",05/02/2020,3,"Rag Tag","Pletcher Todd A","MdnSpWt",343,0.22,1.54
+"GP",05/02/2020,3,"Superfecto","Nicks Ralph E","Mdn2ndStart",43,0.14,0.99
+"GP",05/02/2020,3,"Superfecto","Nicks Ralph E","Sprint/Route",43,0.12,1.56
+"GP",05/02/2020,3,"Superfecto","Nicks Ralph E","31-60Days",136,0.12,0.98
+"GP",05/02/2020,3,"Superfecto","Nicks Ralph E","Dirt",260,0.17,1.64
+"GP",05/02/2020,3,"Superfecto","Nicks Ralph E","Routes",116,0.17,1.71
+"GP",05/02/2020,3,"Superfecto","Nicks Ralph E","MdnSpWt",82,0.12,1.30
+"GP",05/02/2020,4,"Chez Paree","Winebaugh Cheryl","+180Days",2,0.00,0.00
+"GP",05/02/2020,4,"Chez Paree","Winebaugh Cheryl","MSWtoMCL",2,0.50,1.60
+"GP",05/02/2020,4,"Chez Paree","Winebaugh Cheryl","1stLasix",1,0.00,0.00
+"GP",05/02/2020,4,"Chez Paree","Winebaugh Cheryl","Dirt",146,0.12,0.93
+"GP",05/02/2020,4,"Chez Paree","Winebaugh Cheryl","Sprint",100,0.13,1.15
+"GP",05/02/2020,4,"Chez Paree","Winebaugh Cheryl","MdnClm",29,0.17,1.03
+"GP",05/02/2020,4,"Espiritu de Luna","Casse Mark","61-180Days",212,0.13,1.48
+"GP",05/02/2020,4,"Espiritu de Luna","Casse Mark","MSWtoMCL",22,0.09,0.50
+"GP",05/02/2020,4,"Espiritu de Luna","Casse Mark","Dirt",696,0.17,1.55
+"GP",05/02/2020,4,"Espiritu de Luna","Casse Mark","Sprint",693,0.17,1.51
+"GP",05/02/2020,4,"Espiritu de Luna","Casse Mark","MdnClm",89,0.18,1.52
+"GP",05/02/2020,4,"Invaluable","Casse Mark","1stStart",171,0.17,1.83
+"GP",05/02/2020,4,"Invaluable","Casse Mark","Dirt",696,0.17,1.55
+"GP",05/02/2020,4,"Invaluable","Casse Mark","Sprint",693,0.17,1.51
+"GP",05/02/2020,4,"Invaluable","Casse Mark","MdnClm",89,0.18,1.52
+"GP",05/02/2020,4,"Kay's Dream","Duco Luis","1stStart",6,0.00,0.00
+"GP",05/02/2020,4,"Kay's Dream","Duco Luis","Dirt",82,0.13,2.55
+"GP",05/02/2020,4,"Kay's Dream","Duco Luis","Sprint",78,0.10,2.27
+"GP",05/02/2020,4,"Kay's Dream","Duco Luis","MdnClm",59,0.15,2.13
+"GP",05/02/2020,4,"Little Miss Macho","Ritvo Kathy","+180Days",9,0.11,2.76
+"GP",05/02/2020,4,"Little Miss Macho","Ritvo Kathy","Mdn2ndStart",13,0.00,0.00
+"GP",05/02/2020,4,"Little Miss Macho","Ritvo Kathy","MSWtoMCL",7,0.14,0.60
+"GP",05/02/2020,4,"Little Miss Macho","Ritvo Kathy","Dirt",94,0.09,0.87
+"GP",05/02/2020,4,"Little Miss Macho","Ritvo Kathy","Sprint",109,0.07,0.74
+"GP",05/02/2020,4,"Little Miss Macho","Ritvo Kathy","MdnClm",65,0.11,1.20
+"GP",05/02/2020,4,"Our Little Devil","Deaton William","61-180Days",4,0.00,0.00
+"GP",05/02/2020,4,"Our Little Devil","Deaton William","Dirt",15,0.00,0.00
+"GP",05/02/2020,4,"Our Little Devil","Deaton William","Sprint",17,0.12,3.20
+"GP",05/02/2020,4,"Our Little Devil","Deaton William","MdnClm",12,0.08,3.93
+"GP",05/02/2020,4,"Private Message","Pilotti Larry","1stW/Trn",5,0.00,0.00
+"GP",05/02/2020,4,"Private Message","Pilotti Larry","+180Days",1,0.00,0.00
+"GP",05/02/2020,4,"Private Message","Pilotti Larry","MSWtoMCL",3,0.00,0.00
+"GP",05/02/2020,4,"Private Message","Pilotti Larry","Dirt",58,0.05,1.63
+"GP",05/02/2020,4,"Private Message","Pilotti Larry","Sprint",51,0.08,3.75
+"GP",05/02/2020,4,"Private Message","Pilotti Larry","MdnClm",38,0.08,4.79
+"GP",05/02/2020,4,"She So Naughty","Pletcher Todd A","1stStart",191,0.21,1.81
+"GP",05/02/2020,4,"She So Naughty","Pletcher Todd A","Dirt",648,0.23,1.53
+"GP",05/02/2020,4,"She So Naughty","Pletcher Todd A","Sprint",348,0.22,1.51
+"GP",05/02/2020,4,"She So Naughty","Pletcher Todd A","MdnClm",147,0.29,1.73
+"GP",05/02/2020,4,"Teenage Kicks","Brisset Rodolphe","2Off45-180",38,0.11,0.61
+"GP",05/02/2020,4,"Teenage Kicks","Brisset Rodolphe","Dirt",160,0.19,1.83
+"GP",05/02/2020,4,"Teenage Kicks","Brisset Rodolphe","Sprint",112,0.14,1.24
+"GP",05/02/2020,4,"Teenage Kicks","Brisset Rodolphe","MdnClm",54,0.20,1.77
+"GP",05/02/2020,5,"Black Pepper","Tomlinson Michael A","Dirt",202,0.14,2.02
+"GP",05/02/2020,5,"Black Pepper","Tomlinson Michael A","Sprint",173,0.17,2.37
+"GP",05/02/2020,5,"Black Pepper","Tomlinson Michael A","Claim",117,0.17,1.67
+"GP",05/02/2020,5,"Charge Card","Winebaugh Cheryl","31-60Days",36,0.19,1.83
+"GP",05/02/2020,5,"Charge Card","Winebaugh Cheryl","Dirt",146,0.12,0.93
+"GP",05/02/2020,5,"Charge Card","Winebaugh Cheryl","Sprint",100,0.13,1.15
+"GP",05/02/2020,5,"Charge Card","Winebaugh Cheryl","Claim",134,0.12,1.03
+"GP",05/02/2020,5,"Dr Harlan","Delgado Gustavo","Dirt",146,0.25,2.11
+"GP",05/02/2020,5,"Dr Harlan","Delgado Gustavo","Sprint",106,0.19,1.88
+"GP",05/02/2020,5,"Dr Harlan","Delgado Gustavo","Claim",76,0.26,1.76
+"GP",05/02/2020,5,"Finnegan","Ward Wesley A","+180Days",52,0.21,1.10
+"GP",05/02/2020,5,"Finnegan","Ward Wesley A","Dirt",260,0.30,1.69
+"GP",05/02/2020,5,"Finnegan","Ward Wesley A","Sprint",388,0.27,1.57
+"GP",05/02/2020,5,"Finnegan","Ward Wesley A","Claim",47,0.19,1.26
+"GP",05/02/2020,5,"Followhisfootsteps","Barboza Victor Jr","WonLastStart",58,0.31,1.80
+"GP",05/02/2020,5,"Followhisfootsteps","Barboza Victor Jr","Dirt",204,0.26,1.43
+"GP",05/02/2020,5,"Followhisfootsteps","Barboza Victor Jr","Sprint",195,0.24,1.48
+"GP",05/02/2020,5,"Followhisfootsteps","Barboza Victor Jr","Claim",158,0.31,1.79
+"GP",05/02/2020,5,"Jamaican","Walder Peter R","Route/Sprint",32,0.22,2.42
+"GP",05/02/2020,5,"Jamaican","Walder Peter R","31-60Days",101,0.20,3.32
+"GP",05/02/2020,5,"Jamaican","Walder Peter R","Dirt",164,0.21,3.00
+"GP",05/02/2020,5,"Jamaican","Walder Peter R","Sprint",90,0.22,2.94
+"GP",05/02/2020,5,"Jamaican","Walder Peter R","Claim",105,0.14,1.71
+"GP",05/02/2020,5,"Pachanga Party","Arias Juan D","Dirt",52,0.10,0.90
+"GP",05/02/2020,5,"Pachanga Party","Arias Juan D","Sprint",67,0.09,0.99
+"GP",05/02/2020,5,"Pachanga Party","Arias Juan D","Claim",51,0.08,1.06
+"GP",05/02/2020,5,"Phish Fan","Fawkes David","2Off45-180",70,0.16,1.57
+"GP",05/02/2020,5,"Phish Fan","Fawkes David","Dirt",229,0.15,1.66
+"GP",05/02/2020,5,"Phish Fan","Fawkes David","Sprint",238,0.16,1.67
+"GP",05/02/2020,5,"Phish Fan","Fawkes David","Claim",157,0.15,1.38
+"GP",05/02/2020,5,"Silent Tiger","Barboza Victor Jr","Dirt",204,0.26,1.43
+"GP",05/02/2020,5,"Silent Tiger","Barboza Victor Jr","Sprint",195,0.24,1.48
+"GP",05/02/2020,5,"Silent Tiger","Barboza Victor Jr","Claim",158,0.31,1.79
+"GP",05/02/2020,5,"Valdocco","Matier Sandra","2Off45-180",9,0.33,2.36
+"GP",05/02/2020,5,"Valdocco","Matier Sandra","Dirt",35,0.09,0.61
+"GP",05/02/2020,5,"Valdocco","Matier Sandra","Sprint",22,0.09,0.70
+"GP",05/02/2020,5,"Valdocco","Matier Sandra","Claim",37,0.08,0.57
+"GP",05/02/2020,5,"Zalza","Sanchez Amador M","1stClaim",16,0.13,1.08
+"GP",05/02/2020,5,"Zalza","Sanchez Amador M","61-180Days",18,0.33,9.57
+"GP",05/02/2020,5,"Zalza","Sanchez Amador M","Dirt",128,0.12,2.70
+"GP",05/02/2020,5,"Zalza","Sanchez Amador M","Sprint",144,0.15,3.82
+"GP",05/02/2020,5,"Zalza","Sanchez Amador M","Claim",64,0.25,3.88
+"GP",05/02/2020,6,"Customerexperience","Joseph Saffie A Jr","1stW/Trn",143,0.31,1.84
+"GP",05/02/2020,6,"Customerexperience","Joseph Saffie A Jr","61-180Days",80,0.26,1.39
+"GP",05/02/2020,6,"Customerexperience","Joseph Saffie A Jr","Dirt",320,0.28,1.79
+"GP",05/02/2020,6,"Customerexperience","Joseph Saffie A Jr","Sprint",300,0.25,1.65
+"GP",05/02/2020,6,"Customerexperience","Joseph Saffie A Jr","Claim",193,0.31,1.93
+"GP",05/02/2020,6,"Customerexperience","Joseph Saffie A Jr","Alw",79,0.20,1.99
+"GP",05/02/2020,6,"Fast Fionnuala","Bennett Dale","Mdn2ndStart",1,0.00,0.00
+"GP",05/02/2020,6,"Fast Fionnuala","Bennett Dale","WonLastStart",32,0.28,1.73
+"GP",05/02/2020,6,"Fast Fionnuala","Bennett Dale","Dirt",85,0.21,1.30
+"GP",05/02/2020,6,"Fast Fionnuala","Bennett Dale","Sprint",60,0.27,1.36
+"GP",05/02/2020,6,"Fast Fionnuala","Bennett Dale","Alw",10,0.00,0.00
+"GP",05/02/2020,6,"Freezer Burn","Fawkes David","Turf/Dirt",43,0.12,1.28
+"GP",05/02/2020,6,"Freezer Burn","Fawkes David","31-60Days",137,0.12,1.23
+"GP",05/02/2020,6,"Freezer Burn","Fawkes David","Dirt",229,0.15,1.66
+"GP",05/02/2020,6,"Freezer Burn","Fawkes David","Sprint",238,0.16,1.67
+"GP",05/02/2020,6,"Freezer Burn","Fawkes David","Claim",157,0.15,1.38
+"GP",05/02/2020,6,"Freezer Burn","Fawkes David","Alw",52,0.12,2.50
+"GP",05/02/2020,6,"Glory Dia","Mejia Jaime","61-180Days",16,0.00,0.00
+"GP",05/02/2020,6,"Glory Dia","Mejia Jaime","Dirt",249,0.05,1.31
+"GP",05/02/2020,6,"Glory Dia","Mejia Jaime","Sprint",260,0.05,1.38
+"GP",05/02/2020,6,"Glory Dia","Mejia Jaime","Alw",24,0.04,1.99
+"GP",05/02/2020,6,"Loriloupies","Joseph Saffie A Jr","61-180Days",80,0.26,1.39
+"GP",05/02/2020,6,"Loriloupies","Joseph Saffie A Jr","WonLastStart",130,0.35,1.90
+"GP",05/02/2020,6,"Loriloupies","Joseph Saffie A Jr","Dirt",320,0.28,1.79
+"GP",05/02/2020,6,"Loriloupies","Joseph Saffie A Jr","Sprint",300,0.25,1.65
+"GP",05/02/2020,6,"Loriloupies","Joseph Saffie A Jr","Alw",79,0.20,1.99
+"GP",05/02/2020,6,"One Hot Drama","Brownlee David R","WonLastStart",7,0.14,4.29
+"GP",05/02/2020,6,"One Hot Drama","Brownlee David R","Dirt",54,0.07,0.99
+"GP",05/02/2020,6,"One Hot Drama","Brownlee David R","Sprint",57,0.09,1.06
+"GP",05/02/2020,6,"One Hot Drama","Brownlee David R","Claim",62,0.03,0.33
+"GP",05/02/2020,6,"One Hot Drama","Brownlee David R","Alw",3,0.00,0.00
+"GP",05/02/2020,6,"Smitten for Smitty","Ramirez Luis M","WonLastStart",11,0.00,0.00
+"GP",05/02/2020,6,"Smitten for Smitty","Ramirez Luis M","Dirt",41,0.15,2.60
+"GP",05/02/2020,6,"Smitten for Smitty","Ramirez Luis M","Sprint",45,0.13,1.76
+"GP",05/02/2020,6,"Smitten for Smitty","Ramirez Luis M","Claim",39,0.13,1.46
+"GP",05/02/2020,6,"Smitten for Smitty","Ramirez Luis M","Alw",5,0.00,0.00
+"GP",05/02/2020,6,"Sweetheart Deal","Abreu Fernando","+180Days",5,0.20,1.44
+"GP",05/02/2020,6,"Sweetheart Deal","Abreu Fernando","Dirt",89,0.13,1.96
+"GP",05/02/2020,6,"Sweetheart Deal","Abreu Fernando","Sprint",153,0.12,2.04
+"GP",05/02/2020,6,"Sweetheart Deal","Abreu Fernando","Claim",87,0.10,1.95
+"GP",05/02/2020,6,"Sweetheart Deal","Abreu Fernando","Alw",27,0.04,0.41
+"GP",05/02/2020,7,"Bebeau","Breen Kelly J","Route/Sprint",25,0.24,1.50
+"GP",05/02/2020,7,"Bebeau","Breen Kelly J","WonLastStart",73,0.29,1.95
+"GP",05/02/2020,7,"Bebeau","Breen Kelly J","Turf",157,0.14,1.45
+"GP",05/02/2020,7,"Bebeau","Breen Kelly J","Sprint",135,0.23,1.44
+"GP",05/02/2020,7,"Bebeau","Breen Kelly J","Claim",180,0.20,1.43
+"GP",05/02/2020,7,"Conquistador","Casse Mark","Dirt/Turf",202,0.12,1.27
+"GP",05/02/2020,7,"Conquistador","Casse Mark","31-60Days",485,0.16,1.39
+"GP",05/02/2020,7,"Conquistador","Casse Mark","WonLastStart",224,0.15,1.32
+"GP",05/02/2020,7,"Conquistador","Casse Mark","Turf",755,0.15,1.59
+"GP",05/02/2020,7,"Conquistador","Casse Mark","Sprint",693,0.17,1.51
+"GP",05/02/2020,7,"Conquistador","Casse Mark","Claim",143,0.17,1.38
+"GP",05/02/2020,7,"Dizzy Sight","Swick Don","2Off45-180",7,0.00,0.00
+"GP",05/02/2020,7,"Dizzy Sight","Swick Don","Route/Sprint",4,0.00,0.00
+"GP",05/02/2020,7,"Dizzy Sight","Swick Don","Dirt",27,0.07,2.82
+"GP",05/02/2020,7,"Dizzy Sight","Swick Don","Sprint",18,0.06,3.88
+"GP",05/02/2020,7,"Dizzy Sight","Swick Don","Claim",31,0.03,0.21
+"GP",05/02/2020,7,"Handsome Lil Devil","Biancone Patrick L","Route/Sprint",22,0.27,2.28
+"GP",05/02/2020,7,"Handsome Lil Devil","Biancone Patrick L","Turf",136,0.11,1.23
+"GP",05/02/2020,7,"Handsome Lil Devil","Biancone Patrick L","Sprint",96,0.17,1.78
+"GP",05/02/2020,7,"Handsome Lil Devil","Biancone Patrick L","Claim",56,0.16,1.54
+"GP",05/02/2020,7,"January Won","McPeek Kenneth G","2OffOver180",19,0.11,1.22
+"GP",05/02/2020,7,"January Won","McPeek Kenneth G","1stTurf",45,0.07,0.70
+"GP",05/02/2020,7,"January Won","McPeek Kenneth G","Dirt/Turf",54,0.07,1.21
+"GP",05/02/2020,7,"January Won","McPeek Kenneth G","Route/Sprint",37,0.05,0.37
+"GP",05/02/2020,7,"January Won","McPeek Kenneth G","Turf",126,0.11,1.31
+"GP",05/02/2020,7,"January Won","McPeek Kenneth G","Sprint",159,0.11,1.25
+"GP",05/02/2020,7,"Juan Boly","Mejia Jaime","61-180Days",16,0.00,0.00
+"GP",05/02/2020,7,"Juan Boly","Mejia Jaime","Route/Sprint",44,0.02,0.61
+"GP",05/02/2020,7,"Juan Boly","Mejia Jaime","WonLastStart",13,0.08,1.06
+"GP",05/02/2020,7,"Juan Boly","Mejia Jaime","Turf",83,0.06,2.08
+"GP",05/02/2020,7,"Juan Boly","Mejia Jaime","Sprint",260,0.05,1.38
+"GP",05/02/2020,7,"Juan Boly","Mejia Jaime","Claim",91,0.04,1.13
+"GP",05/02/2020,7,"Lookin At Roses","Preciado Guadalupe","BlinkOn",7,0.14,1.43
+"GP",05/02/2020,7,"Lookin At Roses","Preciado Guadalupe","Route/Sprint",14,0.07,0.76
+"GP",05/02/2020,7,"Lookin At Roses","Preciado Guadalupe","Turf",44,0.07,1.37
+"GP",05/02/2020,7,"Lookin At Roses","Preciado Guadalupe","Sprint",136,0.14,1.32
+"GP",05/02/2020,7,"Lookin At Roses","Preciado Guadalupe","Claim",68,0.16,2.09
+"GP",05/02/2020,7,"My G P S","Gonzalez Oscar M","2Off45-180",50,0.12,1.30
+"GP",05/02/2020,7,"My G P S","Gonzalez Oscar M","Route/Sprint",33,0.06,0.95
+"GP",05/02/2020,7,"My G P S","Gonzalez Oscar M","Turf",150,0.09,1.02
+"GP",05/02/2020,7,"My G P S","Gonzalez Oscar M","Sprint",158,0.12,2.20
+"GP",05/02/2020,7,"My G P S","Gonzalez Oscar M","Claim",127,0.10,1.59
+"GP",05/02/2020,7,"Notsosubtle","De La Cerda Armando","2OffOver180",10,0.20,1.16
+"GP",05/02/2020,7,"Notsosubtle","De La Cerda Armando","Route/Sprint",34,0.24,2.09
+"GP",05/02/2020,7,"Notsosubtle","De La Cerda Armando","Turf",146,0.18,2.86
+"GP",05/02/2020,7,"Notsosubtle","De La Cerda Armando","Sprint",146,0.18,2.85
+"GP",05/02/2020,7,"Notsosubtle","De La Cerda Armando","Claim",132,0.18,1.93
+"GP",05/02/2020,7,"Ole Mole","Preciado Guadalupe","2OffOver180",2,0.50,2.80
+"GP",05/02/2020,7,"Ole Mole","Preciado Guadalupe","Route/Sprint",14,0.07,0.76
+"GP",05/02/2020,7,"Ole Mole","Preciado Guadalupe","31-60Days",47,0.13,1.45
+"GP",05/02/2020,7,"Ole Mole","Preciado Guadalupe","Turf",44,0.07,1.37
+"GP",05/02/2020,7,"Ole Mole","Preciado Guadalupe","Sprint",136,0.14,1.32
+"GP",05/02/2020,7,"Ole Mole","Preciado Guadalupe","Claim",68,0.16,2.09
+"GP",05/02/2020,7,"Poppy's Boys","Winebaugh Cheryl","61-180Days",18,0.11,1.29
+"GP",05/02/2020,7,"Poppy's Boys","Winebaugh Cheryl","Route/Sprint",14,0.07,0.23
+"GP",05/02/2020,7,"Poppy's Boys","Winebaugh Cheryl","Turf",69,0.16,1.96
+"GP",05/02/2020,7,"Poppy's Boys","Winebaugh Cheryl","Sprint",100,0.13,1.15
+"GP",05/02/2020,7,"Poppy's Boys","Winebaugh Cheryl","Claim",134,0.12,1.03
+"GP",05/02/2020,7,"Positive Phil","Maker Michael J","Route/Sprint",108,0.21,1.71
+"GP",05/02/2020,7,"Positive Phil","Maker Michael J","Turf",934,0.16,1.38
+"GP",05/02/2020,7,"Positive Phil","Maker Michael J","Sprint",439,0.18,1.58
+"GP",05/02/2020,7,"Positive Phil","Maker Michael J","Claim",432,0.22,1.67
+"GP",05/02/2020,7,"Smell of Roses","Dobles Elizabeth L","Route/Sprint",32,0.16,1.89
+"GP",05/02/2020,7,"Smell of Roses","Dobles Elizabeth L","Turf",150,0.11,1.73
+"GP",05/02/2020,7,"Smell of Roses","Dobles Elizabeth L","Sprint",162,0.17,1.51
+"GP",05/02/2020,7,"Smell of Roses","Dobles Elizabeth L","Claim",168,0.13,1.39
+"GP",05/02/2020,7,"Vita Dolce","Sano Antonio","Dirt/Turf",85,0.07,1.04
+"GP",05/02/2020,7,"Vita Dolce","Sano Antonio","31-60Days",128,0.09,1.18
+"GP",05/02/2020,7,"Vita Dolce","Sano Antonio","Turf",398,0.10,2.11
+"GP",05/02/2020,7,"Vita Dolce","Sano Antonio","Sprint",492,0.09,1.29
+"GP",05/02/2020,7,"Vita Dolce","Sano Antonio","Claim",328,0.12,2.01
+"GP",05/02/2020,8,"Allurstra","Pompay Terri","Sprint/Route",31,0.19,4.72
+"GP",05/02/2020,8,"Allurstra","Pompay Terri","31-60Days",60,0.13,1.57
+"GP",05/02/2020,8,"Allurstra","Pompay Terri","Dirt",143,0.18,2.80
+"GP",05/02/2020,8,"Allurstra","Pompay Terri","Routes",84,0.15,3.13
+"GP",05/02/2020,8,"Allurstra","Pompay Terri","Alw",58,0.12,2.20
+"GP",05/02/2020,8,"Be Gone Daddy","McGoey Monica","Sprint/Route",26,0.04,0.18
+"GP",05/02/2020,8,"Be Gone Daddy","McGoey Monica","31-60Days",27,0.04,0.24
+"GP",05/02/2020,8,"Be Gone Daddy","McGoey Monica","Dirt",106,0.08,1.70
+"GP",05/02/2020,8,"Be Gone Daddy","McGoey Monica","Routes",80,0.11,2.41
+"GP",05/02/2020,8,"Be Gone Daddy","McGoey Monica","Claim",117,0.11,2.19
+"GP",05/02/2020,8,"Be Gone Daddy","McGoey Monica","Alw",7,0.14,4.74
+"GP",05/02/2020,8,"Beau Luminarie","Brisset Rodolphe","Sprint/Route",42,0.19,2.30
+"GP",05/02/2020,8,"Beau Luminarie","Brisset Rodolphe","31-60Days",118,0.18,1.65
+"GP",05/02/2020,8,"Beau Luminarie","Brisset Rodolphe","Dirt",160,0.19,1.83
+"GP",05/02/2020,8,"Beau Luminarie","Brisset Rodolphe","Routes",183,0.15,1.98
+"GP",05/02/2020,8,"Beau Luminarie","Brisset Rodolphe","Alw",48,0.17,2.74
+"GP",05/02/2020,8,"Cool Bobby","DeVaux Cherie","1stW/Trn",11,0.00,0.00
+"GP",05/02/2020,8,"Cool Bobby","DeVaux Cherie","+180Days",3,0.00,0.00
+"GP",05/02/2020,8,"Cool Bobby","DeVaux Cherie","Sprint/Route",10,0.20,1.20
+"GP",05/02/2020,8,"Cool Bobby","DeVaux Cherie","2Sprints/Rou",2,0.50,1.70
+"GP",05/02/2020,8,"Cool Bobby","DeVaux Cherie","Dirt",41,0.20,2.58
+"GP",05/02/2020,8,"Cool Bobby","DeVaux Cherie","Routes",66,0.06,1.18
+"GP",05/02/2020,8,"Gump","Joseph Saffie A Jr","2Off45-180",90,0.24,2.36
+"GP",05/02/2020,8,"Gump","Joseph Saffie A Jr","Sprint/Route",75,0.25,1.73
+"GP",05/02/2020,8,"Gump","Joseph Saffie A Jr","31-60Days",199,0.27,1.98
+"GP",05/02/2020,8,"Gump","Joseph Saffie A Jr","Dirt",320,0.28,1.79
+"GP",05/02/2020,8,"Gump","Joseph Saffie A Jr","Routes",243,0.25,2.07
+"GP",05/02/2020,8,"Gump","Joseph Saffie A Jr","Alw",79,0.20,1.99
+"GP",05/02/2020,8,"Just for One Day","Clement Christophe","2OffOver180",21,0.00,0.00
+"GP",05/02/2020,8,"Just for One Day","Clement Christophe","Turf/Dirt",35,0.14,0.80
+"GP",05/02/2020,8,"Just for One Day","Clement Christophe","Sprint/Route",39,0.05,0.44
+"GP",05/02/2020,8,"Just for One Day","Clement Christophe","31-60Days",178,0.19,1.42
+"GP",05/02/2020,8,"Just for One Day","Clement Christophe","WonLastStart",85,0.19,2.33
+"GP",05/02/2020,8,"Just for One Day","Clement Christophe","Dirt",136,0.18,1.50
+"GP",05/02/2020,8,"Kid Bourbon","Hennig Mark","2Off45-180",49,0.14,1.75
+"GP",05/02/2020,8,"Kid Bourbon","Hennig Mark","Turf/Dirt",25,0.20,2.06
+"GP",05/02/2020,8,"Kid Bourbon","Hennig Mark","31-60Days",158,0.09,0.96
+"GP",05/02/2020,8,"Kid Bourbon","Hennig Mark","Dirt",203,0.14,1.20
+"GP",05/02/2020,8,"Kid Bourbon","Hennig Mark","Routes",166,0.11,0.95
+"GP",05/02/2020,8,"Kid Bourbon","Hennig Mark","Alw",92,0.11,0.83
+"GP",05/02/2020,8,"Overdeliver","Joseph Saffie A Jr","2Off45-180",90,0.24,2.36
+"GP",05/02/2020,8,"Overdeliver","Joseph Saffie A Jr","Sprint/Route",75,0.25,1.73
+"GP",05/02/2020,8,"Overdeliver","Joseph Saffie A Jr","31-60Days",199,0.27,1.98
+"GP",05/02/2020,8,"Overdeliver","Joseph Saffie A Jr","Dirt",320,0.28,1.79
+"GP",05/02/2020,8,"Overdeliver","Joseph Saffie A Jr","Routes",243,0.25,2.07
+"GP",05/02/2020,8,"Overdeliver","Joseph Saffie A Jr","Alw",79,0.20,1.99
+"GP",05/02/2020,8,"Sandino Ruler","Correas Ignacio IV","1stBlink",10,0.00,0.00
+"GP",05/02/2020,8,"Sandino Ruler","Correas Ignacio IV","BlinkOn",12,0.00,0.00
+"GP",05/02/2020,8,"Sandino Ruler","Correas Ignacio IV","31-60Days",106,0.12,0.97
+"GP",05/02/2020,8,"Sandino Ruler","Correas Ignacio IV","Dirt",132,0.16,1.86
+"GP",05/02/2020,8,"Sandino Ruler","Correas Ignacio IV","Routes",264,0.10,1.05
+"GP",05/02/2020,8,"Sandino Ruler","Correas Ignacio IV","Alw",94,0.07,0.86
+"GP",05/02/2020,9,"Astoria Kitten","Gargan Danny","+180Days",13,0.46,3.18
+"GP",05/02/2020,9,"Astoria Kitten","Gargan Danny","Turf",159,0.24,2.49
+"GP",05/02/2020,9,"Astoria Kitten","Gargan Danny","Routes",219,0.26,2.15
+"GP",05/02/2020,9,"Astoria Kitten","Gargan Danny","Stakes",32,0.19,1.18
+"GP",05/02/2020,9,"Bajan Girl","Crichton Rohan","Dirt/Turf",28,0.04,0.29
+"GP",05/02/2020,9,"Bajan Girl","Crichton Rohan","31-60Days",93,0.16,1.41
+"GP",05/02/2020,9,"Bajan Girl","Crichton Rohan","Turf",178,0.16,1.32
+"GP",05/02/2020,9,"Bajan Girl","Crichton Rohan","Routes",151,0.14,1.40
+"GP",05/02/2020,9,"Bajan Girl","Crichton Rohan","Stakes",36,0.14,2.31
+"GP",05/02/2020,9,"Diamonds Are A","Colebrook Ben","61-180Days",56,0.13,3.55
+"GP",05/02/2020,9,"Diamonds Are A","Colebrook Ben","Turf",103,0.10,3.35
+"GP",05/02/2020,9,"Diamonds Are A","Colebrook Ben","Routes",161,0.12,2.52
+"GP",05/02/2020,9,"Diamonds Are A","Colebrook Ben","Stakes",37,0.11,2.36
+"GP",05/02/2020,9,"Dream Marie","Williams Matthew J","31-60Days",10,0.10,0.60
+"GP",05/02/2020,9,"Dream Marie","Williams Matthew J","Dirt",25,0.24,5.83
+"GP",05/02/2020,9,"Dream Marie","Williams Matthew J","Routes",27,0.11,1.44
+"GP",05/02/2020,9,"Dream Marie","Williams Matthew J","Stakes",2,0.00,0.00
+"GP",05/02/2020,9,"Envoutante","McPeek Kenneth G","Dirt/Turf",54,0.07,1.21
+"GP",05/02/2020,9,"Envoutante","McPeek Kenneth G","WonLastStart",59,0.10,2.73
+"GP",05/02/2020,9,"Envoutante","McPeek Kenneth G","Turf",126,0.11,1.31
+"GP",05/02/2020,9,"Envoutante","McPeek Kenneth G","Routes",345,0.14,1.84
+"GP",05/02/2020,9,"Envoutante","McPeek Kenneth G","Stakes",72,0.08,1.91
+"GP",05/02/2020,9,"Ginger Kitty","Pugh Peter D","1stW/Trn",1,1.00,20.20
+"GP",05/02/2020,9,"Ginger Kitty","Pugh Peter D","61-180Days",5,0.20,4.04
+"GP",05/02/2020,9,"Ginger Kitty","Pugh Peter D","Turf",19,0.11,1.37
+"GP",05/02/2020,9,"Ginger Kitty","Pugh Peter D","Routes",12,0.08,0.48
+"GP",05/02/2020,9,"Highland Glory","Tagg Barclay","2Off45-180",22,0.14,0.82
+"GP",05/02/2020,9,"Highland Glory","Tagg Barclay","31-60Days",52,0.13,0.75
+"GP",05/02/2020,9,"Highland Glory","Tagg Barclay","WonLastStart",16,0.25,1.71
+"GP",05/02/2020,9,"Highland Glory","Tagg Barclay","Turf",79,0.11,0.80
+"GP",05/02/2020,9,"Highland Glory","Tagg Barclay","Routes",106,0.12,0.76
+"GP",05/02/2020,9,"Highland Glory","Tagg Barclay","Stakes",39,0.18,1.08
+"GP",05/02/2020,9,"Ivyetsu","Arnold George R II","31-60Days",125,0.14,1.30
+"GP",05/02/2020,9,"Ivyetsu","Arnold George R II","Turf",155,0.14,1.69
+"GP",05/02/2020,9,"Ivyetsu","Arnold George R II","Routes",194,0.12,1.31
+"GP",05/02/2020,9,"Ivyetsu","Arnold George R II","Stakes",53,0.17,1.49
+"GP",05/02/2020,9,"La Rusia","Sanchez Amador M","Turf",107,0.17,3.05
+"GP",05/02/2020,9,"La Rusia","Sanchez Amador M","Routes",91,0.13,1.34
+"GP",05/02/2020,9,"La Rusia","Sanchez Amador M","Stakes",22,0.18,7.98
+"GP",05/02/2020,9,"Micheline","Stidham Michael","31-60Days",281,0.20,1.49
+"GP",05/02/2020,9,"Micheline","Stidham Michael","Turf",455,0.19,1.43
+"GP",05/02/2020,9,"Micheline","Stidham Michael","Routes",528,0.17,1.37
+"GP",05/02/2020,9,"Micheline","Stidham Michael","Stakes",127,0.15,1.06
+"GP",05/02/2020,9,"Mimina's Team","D'Angelo Francisco","WonLastStart",18,0.11,0.94
+"GP",05/02/2020,9,"Mimina's Team","D'Angelo Francisco","Turf",80,0.10,0.90
+"GP",05/02/2020,9,"Mimina's Team","D'Angelo Francisco","Routes",56,0.16,1.01
+"GP",05/02/2020,9,"Mimina's Team","D'Angelo Francisco","Stakes",3,0.33,2.47
+"GP",05/02/2020,9,"Onyx","Alvarado Juan","2OffOver180",7,0.14,0.71
+"GP",05/02/2020,9,"Onyx","Alvarado Juan","31-60Days",61,0.18,1.58
+"GP",05/02/2020,9,"Onyx","Alvarado Juan","Turf",68,0.15,2.10
+"GP",05/02/2020,9,"Onyx","Alvarado Juan","Routes",99,0.17,2.56
+"GP",05/02/2020,9,"Onyx","Alvarado Juan","Stakes",27,0.07,0.55
+"GP",05/02/2020,9,"Pleasant Orb","Tagg Barclay","31-60Days",52,0.13,0.75
+"GP",05/02/2020,9,"Pleasant Orb","Tagg Barclay","WonLastStart",16,0.25,1.71
+"GP",05/02/2020,9,"Pleasant Orb","Tagg Barclay","Dirt",49,0.16,0.90
+"GP",05/02/2020,9,"Pleasant Orb","Tagg Barclay","Routes",106,0.12,0.76
+"GP",05/02/2020,9,"Pleasant Orb","Tagg Barclay","Stakes",39,0.18,1.08
+"GP",05/02/2020,9,"Seducer","Clement Christophe","2Off45-180",64,0.19,1.75
+"GP",05/02/2020,9,"Seducer","Clement Christophe","31-60Days",178,0.19,1.42
+"GP",05/02/2020,9,"Seducer","Clement Christophe","Turf",400,0.20,1.87
+"GP",05/02/2020,9,"Seducer","Clement Christophe","Routes",359,0.17,1.61
+"GP",05/02/2020,9,"Seducer","Clement Christophe","Stakes",110,0.15,1.32
+"GP",05/02/2020,9,"Stunning Sky","Maker Michael J","31-60Days",479,0.15,1.33
+"GP",05/02/2020,9,"Stunning Sky","Maker Michael J","Turf",934,0.16,1.38
+"GP",05/02/2020,9,"Stunning Sky","Maker Michael J","Routes",1025,0.17,1.45
+"GP",05/02/2020,9,"Stunning Sky","Maker Michael J","Stakes",288,0.11,1.58
+"GP",05/02/2020,10,"Garter and Tie","Nicks Ralph E","2OffOver180",16,0.06,0.55
+"GP",05/02/2020,10,"Garter and Tie","Nicks Ralph E","31-60Days",136,0.12,0.98
+"GP",05/02/2020,10,"Garter and Tie","Nicks Ralph E","Dirt",260,0.17,1.64
+"GP",05/02/2020,10,"Garter and Tie","Nicks Ralph E","Sprint",272,0.15,1.38
+"GP",05/02/2020,10,"Garter and Tie","Nicks Ralph E","Stakes",44,0.14,0.90
+"GP",05/02/2020,10,"He Hate Me","Hough Stanley M","31-60Days",50,0.24,1.64
+"GP",05/02/2020,10,"He Hate Me","Hough Stanley M","Dirt",112,0.25,1.87
+"GP",05/02/2020,10,"He Hate Me","Hough Stanley M","Sprint",78,0.26,1.74
+"GP",05/02/2020,10,"He Hate Me","Hough Stanley M","Stakes",30,0.17,0.82
+"GP",05/02/2020,10,"Last Judgment","Pletcher Todd A","2Off45-180",140,0.19,1.41
+"GP",05/02/2020,10,"Last Judgment","Pletcher Todd A","31-60Days",435,0.23,1.61
+"GP",05/02/2020,10,"Last Judgment","Pletcher Todd A","Dirt",648,0.23,1.53
+"GP",05/02/2020,10,"Last Judgment","Pletcher Todd A","Sprint",348,0.22,1.51
+"GP",05/02/2020,10,"Last Judgment","Pletcher Todd A","Stakes",274,0.14,1.20
+"GP",05/02/2020,10,"Network Effect","Brown Chad C","2Off45-180",107,0.27,1.51
+"GP",05/02/2020,10,"Network Effect","Brown Chad C","Route/Sprint",38,0.13,1.28
+"GP",05/02/2020,10,"Network Effect","Brown Chad C","31-60Days",344,0.29,1.68
+"GP",05/02/2020,10,"Network Effect","Brown Chad C","Dirt",351,0.26,1.45
+"GP",05/02/2020,10,"Network Effect","Brown Chad C","Sprint",232,0.25,1.65
+"GP",05/02/2020,10,"Network Effect","Brown Chad C","Stakes",294,0.27,1.87
+"GP",05/02/2020,10,"Noble Drama","Fawkes David","Route/Sprint",36,0.14,1.46
+"GP",05/02/2020,10,"Noble Drama","Fawkes David","31-60Days",137,0.12,1.23
+"GP",05/02/2020,10,"Noble Drama","Fawkes David","Dirt",229,0.15,1.66
+"GP",05/02/2020,10,"Noble Drama","Fawkes David","Sprint",238,0.16,1.67
+"GP",05/02/2020,10,"Noble Drama","Fawkes David","Stakes",47,0.09,0.66
+"GP",05/02/2020,10,"Red Crescent","Vinson John J","61-180Days",7,0.00,0.00
+"GP",05/02/2020,10,"Red Crescent","Vinson John J","Route/Sprint",12,0.00,0.00
+"GP",05/02/2020,10,"Red Crescent","Vinson John J","Dirt",74,0.15,1.45
+"GP",05/02/2020,10,"Red Crescent","Vinson John J","Sprint",39,0.13,1.29
+"GP",05/02/2020,10,"Red Crescent","Vinson John J","Stakes",7,0.14,0.57
+"GP",05/02/2020,10,"Royal Squeeze","Dobles Elizabeth L","2Off45-180",36,0.14,1.65
+"GP",05/02/2020,10,"Royal Squeeze","Dobles Elizabeth L","Dirt",136,0.18,1.71
+"GP",05/02/2020,10,"Royal Squeeze","Dobles Elizabeth L","Sprint",162,0.17,1.51
+"GP",05/02/2020,10,"Royal Squeeze","Dobles Elizabeth L","Stakes",21,0.19,2.83
+"GP",05/02/2020,10,"With Verve","Bates Larry","61-180Days",5,0.00,0.00
+"GP",05/02/2020,10,"With Verve","Bates Larry","WonLastStart",14,0.07,2.76
+"GP",05/02/2020,10,"With Verve","Bates Larry","Dirt",63,0.16,3.16
+"GP",05/02/2020,10,"With Verve","Bates Larry","Sprint",73,0.14,4.55
+"GP",05/02/2020,10,"With Verve","Bates Larry","Stakes",3,0.33,12.87
+"GP",05/02/2020,11,"Buy Me Candy","Correas Ignacio IV","31-60Days",106,0.12,0.97
+"GP",05/02/2020,11,"Buy Me Candy","Correas Ignacio IV","WonLastStart",36,0.08,1.21
+"GP",05/02/2020,11,"Buy Me Candy","Correas Ignacio IV","Turf",220,0.09,0.91
+"GP",05/02/2020,11,"Buy Me Candy","Correas Ignacio IV","Routes",264,0.10,1.05
+"GP",05/02/2020,11,"Buy Me Candy","Correas Ignacio IV","Stakes",60,0.08,0.96
+"GP",05/02/2020,11,"Doc Boy","Stidham Michael","31-60Days",281,0.20,1.49
+"GP",05/02/2020,11,"Doc Boy","Stidham Michael","WonLastStart",132,0.17,1.05
+"GP",05/02/2020,11,"Doc Boy","Stidham Michael","Turf",455,0.19,1.43
+"GP",05/02/2020,11,"Doc Boy","Stidham Michael","Routes",528,0.17,1.37
+"GP",05/02/2020,11,"Doc Boy","Stidham Michael","Stakes",127,0.15,1.06
+"GP",05/02/2020,11,"Don Juan Kitten","Gargan Danny","+180Days",13,0.46,3.18
+"GP",05/02/2020,11,"Don Juan Kitten","Gargan Danny","Turf",159,0.24,2.49
+"GP",05/02/2020,11,"Don Juan Kitten","Gargan Danny","Routes",219,0.26,2.15
+"GP",05/02/2020,11,"Don Juan Kitten","Gargan Danny","Stakes",32,0.19,1.18
+"GP",05/02/2020,11,"Ever Dangerous","Weaver George","Mdn2ndStart",33,0.06,0.28
+"GP",05/02/2020,11,"Ever Dangerous","Weaver George","WonLastStart",34,0.21,1.47
+"GP",05/02/2020,11,"Ever Dangerous","Weaver George","Turf",133,0.12,1.39
+"GP",05/02/2020,11,"Ever Dangerous","Weaver George","Routes",145,0.17,1.82
+"GP",05/02/2020,11,"Ever Dangerous","Weaver George","Stakes",41,0.10,0.60
+"GP",05/02/2020,11,"Express Pharoah","Delgado Alexis","WonLastStart",22,0.05,2.15
+"GP",05/02/2020,11,"Express Pharoah","Delgado Alexis","Turf",58,0.16,2.79
+"GP",05/02/2020,11,"Express Pharoah","Delgado Alexis","Routes",63,0.17,4.35
+"GP",05/02/2020,11,"Express Pharoah","Delgado Alexis","Stakes",18,0.11,6.51
+"GP",05/02/2020,11,"Extraordinary","Brisset Rodolphe","31-60Days",118,0.18,1.65
+"GP",05/02/2020,11,"Extraordinary","Brisset Rodolphe","WonLastStart",34,0.12,1.88
+"GP",05/02/2020,11,"Extraordinary","Brisset Rodolphe","Dirt",160,0.19,1.83
+"GP",05/02/2020,11,"Extraordinary","Brisset Rodolphe","Routes",183,0.15,1.98
+"GP",05/02/2020,11,"Extraordinary","Brisset Rodolphe","Stakes",35,0.09,1.01
+"GP",05/02/2020,11,"Fame to Famous","Mc Allen John P","1stLasix",3,0.00,0.00
+"GP",05/02/2020,11,"Fame to Famous","Mc Allen John P","31-60Days",4,0.00,0.00
+"GP",05/02/2020,11,"Fame to Famous","Mc Allen John P","Turf",9,0.00,0.00
+"GP",05/02/2020,11,"Fame to Famous","Mc Allen John P","Routes",9,0.00,0.00
+"GP",05/02/2020,11,"Fame to Famous","Mc Allen John P","Stakes",3,0.00,0.00
+"GP",05/02/2020,11,"Gufo","Clement Christophe","2Off45-180",64,0.19,1.75
+"GP",05/02/2020,11,"Gufo","Clement Christophe","31-60Days",178,0.19,1.42
+"GP",05/02/2020,11,"Gufo","Clement Christophe","WonLastStart",85,0.19,2.33
+"GP",05/02/2020,11,"Gufo","Clement Christophe","Turf",400,0.20,1.87
+"GP",05/02/2020,11,"Gufo","Clement Christophe","Routes",359,0.17,1.61
+"GP",05/02/2020,11,"Gufo","Clement Christophe","Stakes",110,0.15,1.32
+"GP",05/02/2020,11,"Island Commish","Joseph Saffie A Jr","61-180Days",80,0.26,1.39
+"GP",05/02/2020,11,"Island Commish","Joseph Saffie A Jr","Sprint/Route",75,0.25,1.73
+"GP",05/02/2020,11,"Island Commish","Joseph Saffie A Jr","WonLastStart",130,0.35,1.90
+"GP",05/02/2020,11,"Island Commish","Joseph Saffie A Jr","Turf",223,0.22,1.91
+"GP",05/02/2020,11,"Island Commish","Joseph Saffie A Jr","Routes",243,0.25,2.07
+"GP",05/02/2020,11,"Island Commish","Joseph Saffie A Jr","Stakes",77,0.21,2.14
+"GP",05/02/2020,11,"Justinthenickotime","Maker Michael J","1stClaim",116,0.15,1.30
+"GP",05/02/2020,11,"Justinthenickotime","Maker Michael J","31-60Days",479,0.15,1.33
+"GP",05/02/2020,11,"Justinthenickotime","Maker Michael J","Turf",934,0.16,1.38
+"GP",05/02/2020,11,"Justinthenickotime","Maker Michael J","Routes",1025,0.17,1.45
+"GP",05/02/2020,11,"Justinthenickotime","Maker Michael J","Stakes",288,0.11,1.58
+"GP",05/02/2020,11,"Proven Strategies","Casse Mark","WonLastStart",224,0.15,1.32
+"GP",05/02/2020,11,"Proven Strategies","Casse Mark","Turf",755,0.15,1.59
+"GP",05/02/2020,11,"Proven Strategies","Casse Mark","Routes",758,0.16,1.62
+"GP",05/02/2020,11,"Proven Strategies","Casse Mark","Stakes",325,0.13,1.53
+"GP",05/02/2020,11,"South Bend","Hough Stanley M","31-60Days",50,0.24,1.64
+"GP",05/02/2020,11,"South Bend","Hough Stanley M","Turf",31,0.13,1.06
+"GP",05/02/2020,11,"South Bend","Hough Stanley M","Routes",65,0.18,1.65
+"GP",05/02/2020,11,"South Bend","Hough Stanley M","Stakes",30,0.17,0.82
+"GP",05/02/2020,11,"Summer to Remember","Pletcher Todd A","2Off45-180",140,0.19,1.41
+"GP",05/02/2020,11,"Summer to Remember","Pletcher Todd A","31-60Days",435,0.23,1.61
+"GP",05/02/2020,11,"Summer to Remember","Pletcher Todd A","Turf",448,0.18,1.46
+"GP",05/02/2020,11,"Summer to Remember","Pletcher Todd A","Routes",748,0.21,1.50
+"GP",05/02/2020,11,"Summer to Remember","Pletcher Todd A","Stakes",274,0.14,1.20
+"GP",05/02/2020,12,"Beach Dreaming","Gallegos Jose A","1stClaim",14,0.07,0.30
+"GP",05/02/2020,12,"Beach Dreaming","Gallegos Jose A","31-60Days",30,0.17,1.57
+"GP",05/02/2020,12,"Beach Dreaming","Gallegos Jose A","Turf",57,0.14,1.11
+"GP",05/02/2020,12,"Beach Dreaming","Gallegos Jose A","Routes",49,0.12,1.11
+"GP",05/02/2020,12,"Beach Dreaming","Gallegos Jose A","Claim",46,0.04,0.66
+"GP",05/02/2020,12,"Britesideoftheroad","Breen Kelly J","Turf",157,0.14,1.45
+"GP",05/02/2020,12,"Britesideoftheroad","Breen Kelly J","Routes",248,0.19,1.54
+"GP",05/02/2020,12,"Britesideoftheroad","Breen Kelly J","Claim",180,0.20,1.43
+"GP",05/02/2020,12,"Dance Till Dawn","Serpe Philip M","Turf",80,0.11,1.21
+"GP",05/02/2020,12,"Dance Till Dawn","Serpe Philip M","Routes",70,0.11,2.19
+"GP",05/02/2020,12,"Dance Till Dawn","Serpe Philip M","Claim",11,0.45,4.55
+"GP",05/02/2020,12,"Dangerous Woman","Stephens John","+180Days",10,0.10,5.72
+"GP",05/02/2020,12,"Dangerous Woman","Stephens John","Turf",78,0.13,2.16
+"GP",05/02/2020,12,"Dangerous Woman","Stephens John","Routes",71,0.14,2.38
+"GP",05/02/2020,12,"Drinks On Me","Winebaugh Cheryl","Turf",69,0.16,1.96
+"GP",05/02/2020,12,"Drinks On Me","Winebaugh Cheryl","Routes",115,0.13,1.36
+"GP",05/02/2020,12,"Drinks On Me","Winebaugh Cheryl","Claim",134,0.12,1.03
+"GP",05/02/2020,12,"Hotty Toddy","David Carlos A","Turf",69,0.23,5.31
+"GP",05/02/2020,12,"Hotty Toddy","David Carlos A","Routes",55,0.20,3.78
+"GP",05/02/2020,12,"Hotty Toddy","David Carlos A","Claim",66,0.21,2.98
+"GP",05/02/2020,12,"La Incondicional","Crichton Rohan","WonLastStart",59,0.17,1.21
+"GP",05/02/2020,12,"La Incondicional","Crichton Rohan","Turf",178,0.16,1.32
+"GP",05/02/2020,12,"La Incondicional","Crichton Rohan","Routes",151,0.14,1.40
+"GP",05/02/2020,12,"La Incondicional","Crichton Rohan","Claim",171,0.15,1.81
+"GP",05/02/2020,12,"Little Code","Hess R B Jr","1stW/Trn",97,0.13,1.30
+"GP",05/02/2020,12,"Little Code","Hess R B Jr","61-180Days",56,0.14,1.17
+"GP",05/02/2020,12,"Little Code","Hess R B Jr","Turf",191,0.12,1.74
+"GP",05/02/2020,12,"Little Code","Hess R B Jr","Routes",255,0.14,1.68
+"GP",05/02/2020,12,"Little Code","Hess R B Jr","Claim",204,0.16,1.46
+"GP",05/02/2020,12,"Much About It","Marcondes Patrick K","Turf",15,0.00,0.00
+"GP",05/02/2020,12,"Much About It","Marcondes Patrick K","Routes",11,0.00,0.00
+"GP",05/02/2020,12,"Much About It","Marcondes Patrick K","Claim",47,0.02,1.17
+"GP",05/02/2020,12,"Paint the Corners","Sancal Murat","Turf",60,0.10,1.33
+"GP",05/02/2020,12,"Paint the Corners","Sancal Murat","Routes",89,0.11,1.07
+"GP",05/02/2020,12,"Paint the Corners","Sancal Murat","Claim",70,0.11,0.66
+"GP",05/02/2020,12,"She Takes Heart","Croft Barry","61-180Days",8,0.13,4.40
+"GP",05/02/2020,12,"She Takes Heart","Croft Barry","Dirt",76,0.09,1.05
+"GP",05/02/2020,12,"She Takes Heart","Croft Barry","Routes",32,0.09,1.47
+"GP",05/02/2020,12,"She Takes Heart","Croft Barry","Claim",50,0.10,0.86
