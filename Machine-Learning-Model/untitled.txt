@@ -1,0 +1,8 @@
+# Needed Variables are: 
+#     tvghorseweight, y
+#     tvghorseage, y
+#     tvghorsedaysoff, y
+#     tvghorsenumberofwins, y
+#     tvghorsepowerrating, y
+#     tvghorseaveragespeed, y
+#     tvghorseaverageclassrating
