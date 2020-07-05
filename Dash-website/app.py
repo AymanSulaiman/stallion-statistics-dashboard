@@ -99,9 +99,9 @@ def generate_table(dataframe, max_rows=10):
         html.Tbody([
             html.Tr([
                 html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
-            ]) for i in range(min(len(dataframe), max_rows))
-        ])
-    ], style={'textAlign': 'center'})
+            ], style={'align': 'center'}) for i in range(min(len(dataframe), max_rows))
+        ], style={'align': 'center'})
+    ], style={'align': 'center'})
 
 
 app.layout = html.Div(children=[
@@ -143,27 +143,60 @@ app.layout = html.Div(children=[
 
     html.Div([
         html.Div([
-            html.Iframe(srcDoc=tg.daily_winpayout_beyer_speed, width="100%", height="587", style={'border':0}),  
-            html.Iframe(srcDoc=tg.horse_racing_dashboard, width="100%", height="587",style={'border':0})
-        ]),
+            html.Iframe(srcDoc=tg.beyer_one_ranking, width="100%", height="900", style={'border':0})
+        ], className="pretty_container six columns"),
 
         html.Div([
-            html.Iframe(srcDoc=tg.avg_horse_power, width="100%", height="587",style={'border':0})
-        ]),
+            html.Iframe(srcDoc=tg.avg_horse_power, width="100%", height="900",style={'border':0}),  
+        ], className="pretty_container six columns"),
 
         
         # html.Iframe(srcDoc=notebook,style=dict(border=0), width="100%", height="800")
-    ]),
+    ], className="flex-display row pretty-container"),
 
+    html.Div([
+            html.Iframe(srcDoc=tg.horse_racing_dashboard, width="90%", height="1000px",style={'border':0, 'align': 'center'})
+        ]),
+
+    
     html.Div([
         html.Div([
 
-        ]),
+            html.H2(children='''
+            Syed Ayman Sulaiman
+            '''),
+
+            html.A(children='''
+            LinkedIn
+            ''',
+            href='https://www.linkedin.com/in/s-ayman-sulaiman',
+            target='_blank'),
+
+            html.Br(),
+
+            html.A(children='''
+            Resume
+            ''', 
+            href='https://drive.google.com/file/d/1NXci3kPUlxHqQ8PDRxlInGBnUZYTSNlp/view?usp=sharing',
+            target='_blank'
+            )
+        ], className="pretty_container six columns"),
 
         html.Div([
-            
-        ])
-    ])
+            html.H2(children='''
+            Hakob Harutyunyan
+            '''),
+
+            html.A(children = '''
+            LinkedIn
+            ''',
+            href='''
+            https://www.linkedin.com/in/hakob-harutyunyan-4a7360199/
+            ''' 
+            ) 
+
+        ], className="pretty_container six columns")
+    ], className="flex-display row pretty-container")
 ], style={'textAlign': 'center'})
 
 
