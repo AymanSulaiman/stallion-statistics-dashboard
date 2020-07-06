@@ -1,4 +1,4 @@
-Date,Race,Name,Weight,Age,Days_off,Number of Wins,Power Rating,Average Class Rating,Average Speed,Won,Won SVM,Won XGBoost,Won GaussianNB
+Date,Race,Name,Weight,Age,Days off,Number of Wins,Power Rating,Average Class Rating,Average Speed,Won,Won SVM,Won XGBoost,Won GaussianNB
 2020-06-05,6,orb's soul,118,3,18,0,59.6,70,60,1,1,0,0
 2020-05-31,6,whoville,118,3,51,0,53.1,72,52,1,1,0,0
 2020-06-18,1,jamin's jet,120,2,23,0,59.2,74,52,1,1,0,0

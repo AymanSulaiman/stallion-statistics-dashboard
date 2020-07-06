@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 from dash.dependencies import Input, Output
-from notebook_html import notebook
+# from notebook_html import notebook
 import dash_bootstrap_components as dbc
 import tableau_graphs as tg
 
@@ -115,24 +115,28 @@ app.layout = html.Div(children=[
     html.H4(children='horse racing data_1'),
     generate_table(display_df, max_rows=10),
     html.H2(children='''
-            Replace tableau dashboards with new ones
+            Dashbooard 1
+            '''),
+
+    html.Div([
+        html.Iframe(srcDoc=tg.dashboard_1, width="1600px", height="900px", style={'border':0})
+    ],style={'display': 'inline-block', 'width':'auto'}),
+    html.H2(children='''
+            Dashboard 2
             '''),
     html.Div([
-        html.Div([
-            html.Iframe(srcDoc=tg.beyer_one_ranking, width="100%", height="900", style={'border':0})
-        ], className="pretty_container six columns"),
-
-        html.Div([
-            html.Iframe(srcDoc=tg.avg_horse_power, width="100%", height="900",style={'border':0}),  
-        ], className="pretty_container six columns"),
+        html.Iframe(srcDoc=tg.dashboard_2, width="1600px", height="900px",style={'border':0}),  
+    ]),
+    html.Div([
+        
 
         
         # html.Iframe(srcDoc=notebook,style=dict(border=0), width="100%", height="800")
-    ], className="flex-display row pretty-container"),
+    ],style={'display': 'inline-block'}),
 
-    html.Div([
-            html.Iframe(srcDoc=tg.horse_racing_dashboard, width="90%", height="1000px",style={'border':0, 'align': 'center'})
-        ]),
+    # html.Div([
+    #         html.Iframe(srcDoc=tg.horse_racing_dashboard, width="90%", height="1000px",style={'border':0, 'align': 'center'})
+    #     ]),
 
     
     html.Div([
