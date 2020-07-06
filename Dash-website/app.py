@@ -8,7 +8,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
-import ml_outputs as mo
 from dash.dependencies import Input, Output
 from notebook_html import notebook
 import dash_bootstrap_components as dbc
@@ -18,78 +17,16 @@ import tableau_graphs as tg
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-# app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
 
-df = pd.read_csv('cleaned_tvg_cd_data.csv')
+PATH = os.path.join('..','Machine_Learning_Model_redo','total.csv')
 
-display_df = df[
-    ['horsename',
-     'tvghorseweight',      
-     'tvghorseage',         
-     'tvghorsedaysoff',     
-     'tvghorsenumberofwins',
-     'tvghorsepowerrating',
-     'tvghorseaverageclassrating',
-     'tvghorseaveragespeed',
-     'winpayoutbinary']
-]
+df = pd.read_csv(PATH)
 
-features = [
-    'tvghorseweight',            # 0
-    'tvghorseage',               # 1
-    'tvghorsedaysoff',           # 2
-    'tvghorsenumberofwins',      # 3
-    'tvghorsepowerrating',       # 4
-    'tvghorseaverageclassrating' # 5
-]
+display_df = df.iloc[:,0:9]
 
-target = 'tvghorseaveragespeed'
-x = df[features[4]]
-y = df[target]
-
-m, c = np.polyfit(x, y, 1)
-
-fig_example = go.Figure()
-
-fig_example.add_trace(go.Scatter(x=x, y=y,
-                    mode='markers',
-                    name='power, speed'))
-
-fig_example.add_trace(go.Scatter(x=x, y=(x*m)+c,
-                    mode='lines',
-                    name='Line of best fit'))
-
-fig_example.update_layout(
-            title="Power and speed of horse",
-            xaxis_title="Power",
-            yaxis_title="Speed",
-            font=dict(
-                family="Courier New, monospace",
-                size=16,
-                color="#7f7f7f"
-            )
-)
-
-fig_example_1 = go.Figure()
-
-fig_example_1.add_trace(go.Scatter(x=x, y=y,
-                    mode='markers',
-                    name='power, speed'))
-
-fig_example_1.add_trace(go.Scatter(x=x, y=(x*m)+c,
-                    mode='lines',
-                    name='Line of best fit'))
-
-fig_example_1.update_layout(
-            title="Power and speed of horse",
-            xaxis_title="Power",
-            yaxis_title="Speed",
-            font=dict(
-                family="Courier New, monospace",
-                size=16,
-                color="#7f7f7f"
-            )
-)
+won_svm_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/won_svm.csv')
+won_gaussian_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/won_gaussian.csv')
+won_xgboost_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/won_xgboost.csv')
 
 def generate_table(dataframe, max_rows=10):
     return html.Table([
@@ -108,39 +45,78 @@ app.layout = html.Div(children=[
     html.H1(children='Stalion Statistics'),
 
     html.H2(children='''
-        A web dashboard for horse racing stats.
+        A web dashboard for horse racing stats
     '''),
 
-    html.H2(children='''
-        Built in Python, made with ❤️
-    '''),
-
-
+    
     html.Div([
-
         html.Div([
-            html.H3('column 1'),
-            dcc.Graph(
-                id='example-graph-1',
-                figure=fig_example_1
-            )
-        ], className="pretty_container six columns"),
-
+            html.H2(children='''
+            SVM Classification
+            '''),
+            html.H2(children='''
+            Import the code here and it's score and/or classification report
+            '''),
+            generate_table(won_svm_df),
+        ]),
         html.Div([
-            html.H3('column 2'),
-            dcc.Graph(
-                id='example-graph',
-                figure=fig_example
-            )
-        ], className="pretty_container six columns")
+            html.H2(children='''
+            XGBoost Classification
+            '''),
+            html.H2(children='''
+            Import the code here and it's score and/or classification report
+            '''),
+            generate_table(won_xgboost_df),
+        ]),
+        html.Div([
+            html.H2(children='''
+            Naive Bayes Gaussian Classification
+            '''),
+            html.H2(children='''
+            Import the code here and it's score and/or classification report
+            '''),
+            generate_table(won_gaussian_df),
+        ]),
+    ],style={'display': 'inline-block'}),
+    
+
+    # html.Div([
+
+    #     html.Div([
+    #         html.H3('Actual y Values'),
+    #         dcc.Graph(
+    #             id='fig_tvghorseweight_won',
+    #             figure=fig_tvghorseweight_won
+    #         ),
+    #         html.H3('XGBoost'),
+    #         dcc.Graph(
+    #             id='fig_tvghorseweight_won_XGBoost',
+    #             figure=fig_tvghorseweight_won_XGBoost
+    #         )
+    #     ], className="pretty_container six columns"),
+
+    #     html.Div([
+    #         html.H3('Support Vector Machine'),
+    #         dcc.Graph(
+    #             id='fig_tvghorseweight_won_SVM',
+    #             figure=fig_tvghorseweight_won_SVM
+    #         ),
+    #         html.H3('Gaussian Naive-Bayes'),
+    #         dcc.Graph(
+    #             id='fig_tvghorseweight_won_GaussianNB',
+    #             figure=fig_tvghorseweight_won_GaussianNB
+    #         )
+    #     ], className="pretty_container six columns")
 
 
-    ], className="flex-display row pretty-container"),
+    # ], className="flex-display row pretty-container"),
 
 
     html.H4(children='horse racing data_1'),
     generate_table(display_df, max_rows=10),
-
+    html.H2(children='''
+            Replace tableau dashboards with new ones
+            '''),
     html.Div([
         html.Div([
             html.Iframe(srcDoc=tg.beyer_one_ranking, width="100%", height="900", style={'border':0})
@@ -196,7 +172,10 @@ app.layout = html.Div(children=[
             ) 
 
         ], className="pretty_container six columns")
-    ], className="flex-display row pretty-container")
+    ], className="flex-display row pretty-container"),
+    html.H2(children='''
+        Built in Python, made with ❤️
+    '''),
 ], style={'textAlign': 'center'})
 
 
