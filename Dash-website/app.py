@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 from dash.dependencies import Input, Output
-# from notebook_html import notebook
+import notebook_html 
 import dash_bootstrap_components as dbc
 import tableau_graphs as tg
 
@@ -28,18 +28,13 @@ won_svm_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2
 won_gaussian_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/won_gaussian.csv')
 won_xgboost_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/won_xgboost.csv')
 
-def generate_table(dataframe, max_rows=10):
-    return html.Table([
-        html.Thead(
-            html.Tr([html.Th(col) for col in dataframe.columns])
-        ),
-        html.Tbody([
-            html.Tr([
-                html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
-            ], style={'align': 'center'}) for i in range(min(len(dataframe), max_rows))
-        ], style={'align': 'center'})
-    ], style={'align': 'center'})
+lost_svm_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/lost_svm.csv')
+lost_gaussian_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/lost_gaussian.csv')
+lost_xgboost_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/lost_xgboost.csv')
 
+total_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/total.csv') 
+train_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/train.csv')
+test_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/test.csv')
 
 app.layout = html.Div(children=[
     html.H1(children='Stalion Statistics'),
@@ -48,16 +43,54 @@ app.layout = html.Div(children=[
         A web dashboard for horse racing stats
     '''),
 
+    html.Div([
+        html.H4(children='horse racing data_1'),
+        dash_table.DataTable(
+            id='table',
+            columns=[{"name": i, "id": i} for i in total_df.columns],
+            data=total_df.to_dict('records'),
+            style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+            },
+        )
+        
+    ],style={'display': 'inline-block'}),
     
     html.Div([
         html.Div([
             html.H2(children='''
             SVM Classification
             '''),
-            html.H2(children='''
-            Import the code here and it's score and/or classification report
+            html.Iframe(srcDoc=notebook_html.svm, width="600px", height="700px", style={'border':0}),
+            html.H3(children=f'''
+            SVM Correct Winning Prediction
+            Count: {len(won_svm_df)}
             '''),
-            generate_table(won_svm_df),
+            dash_table.DataTable(
+                id='table1_won',
+                columns=[{"name": i, "id": i} for i in won_svm_df.columns],
+                data=won_svm_df.to_dict('records'),
+                style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+                },
+            ),
+            
+            html.H3(children=f'''
+            SVM Correct Loosing Prediction
+            Count: {len(lost_svm_df)}
+            '''),
+            dash_table.DataTable(
+                id='table1_lost',
+                columns=[{"name": i, "id": i} for i in lost_svm_df.columns],
+                data=lost_svm_df.to_dict('records'),
+                style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+                },
+            ),
+            
         ]),
         html.Div([
             html.H2(children='''
@@ -66,7 +99,33 @@ app.layout = html.Div(children=[
             html.H2(children='''
             Import the code here and it's score and/or classification report
             '''),
-            generate_table(won_xgboost_df),
+            html.Iframe(srcDoc=notebook_html.xgboost,width="480px", height="920px", style={'border':0}),
+            html.H3(children=f'''
+            XGBoost Correct Winning Prediction
+            Count: {len(won_xgboost_df)}
+            '''),
+            dash_table.DataTable(
+                id='table2_won',
+                columns=[{"name": i, "id": i} for i in won_xgboost_df.columns],
+                data=won_xgboost_df.to_dict('records'),
+                style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+                },
+            ),
+            html.H3(children=f'''
+            XGBoost Correct Loosing Prediction
+            Count: {len(lost_xgboost_df)}
+            '''),
+            dash_table.DataTable(
+                id='table2_lost',
+                columns=[{"name": i, "id": i} for i in lost_xgboost_df.columns],
+                data=lost_xgboost_df.to_dict('records'),
+                style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+                },
+            ),
         ]),
         html.Div([
             html.H2(children='''
@@ -75,45 +134,37 @@ app.layout = html.Div(children=[
             html.H2(children='''
             Import the code here and it's score and/or classification report
             '''),
-            generate_table(won_gaussian_df),
+            html.Iframe(srcDoc=notebook_html.gaussian,width="480px", height="920px", style={'border':0}),
+            html.H3(children=f'''
+            Naive-Bayes Correct Winning Prediction
+            Count: {len(won_gaussian_df)}
+            '''),
+            dash_table.DataTable(
+                id='table3_won',
+                columns=[{"name": i, "id": i} for i in won_gaussian_df.columns],
+                data=won_gaussian_df.to_dict('records'),
+                style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+                },
+            ),
+            html.H3(children=f'''
+            Naive-Bayes Correct Loosing Prediction
+            Count: {len(lost_gaussian_df)}
+            '''),dash_table.DataTable(
+                id='table3_lost',
+                columns=[{"name": i, "id": i} for i in lost_gaussian_df.columns],
+                data=lost_gaussian_df.to_dict('records'),
+                style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+                },
+            ),
         ]),
     ],style={'display': 'inline-block'}),
     
 
-    # html.Div([
-
-    #     html.Div([
-    #         html.H3('Actual y Values'),
-    #         dcc.Graph(
-    #             id='fig_tvghorseweight_won',
-    #             figure=fig_tvghorseweight_won
-    #         ),
-    #         html.H3('XGBoost'),
-    #         dcc.Graph(
-    #             id='fig_tvghorseweight_won_XGBoost',
-    #             figure=fig_tvghorseweight_won_XGBoost
-    #         )
-    #     ], className="pretty_container six columns"),
-
-    #     html.Div([
-    #         html.H3('Support Vector Machine'),
-    #         dcc.Graph(
-    #             id='fig_tvghorseweight_won_SVM',
-    #             figure=fig_tvghorseweight_won_SVM
-    #         ),
-    #         html.H3('Gaussian Naive-Bayes'),
-    #         dcc.Graph(
-    #             id='fig_tvghorseweight_won_GaussianNB',
-    #             figure=fig_tvghorseweight_won_GaussianNB
-    #         )
-    #     ], className="pretty_container six columns")
-
-
-    # ], className="flex-display row pretty-container"),
-
-
-    html.H4(children='horse racing data_1'),
-    generate_table(display_df, max_rows=10),
+    
     html.H2(children='''
             Dashbooard 1
             '''),
@@ -159,6 +210,17 @@ app.layout = html.Div(children=[
             ''', 
             href='https://drive.google.com/file/d/1NXci3kPUlxHqQ8PDRxlInGBnUZYTSNlp/view?usp=sharing',
             target='_blank'
+            ),
+
+            html.Br(),
+
+            html.A(children='''
+            GitHub
+            ''', 
+            href='''
+            https://github.com/AymanSulaiman
+            ''',
+            target='_blank'
             )
         ], className="pretty_container six columns"),
 
@@ -172,7 +234,19 @@ app.layout = html.Div(children=[
             ''',
             href='''
             https://www.linkedin.com/in/hakob-harutyunyan-4a7360199/
-            ''' 
+            ''' ,
+            target='_blank'
+            ),
+
+            html.Br(),
+
+            html.A(children='''
+            GitHub
+            ''', 
+            href='''
+            https://github.com/hharutyunyan1
+            ''',
+            target='_blank'
             ) 
 
         ], className="pretty_container six columns")
