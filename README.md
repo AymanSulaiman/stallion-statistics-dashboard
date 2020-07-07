@@ -2,9 +2,9 @@
 
 ![Screenshot](Stallion_Statistics.png)
 
-Our Team: 
+**Our Team:**
 
-**Ayman Sulaiman**
-**Andrew Wright**
-**Aldo Garcia**
-**Hakob Harutyunyan**
+- Ayman Sulaiman
+- Andrew Wright
+- Aldo Garcia
+- Hakob Harutyunyan
