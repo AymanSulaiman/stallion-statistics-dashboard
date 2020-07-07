@@ -4,7 +4,7 @@
 
 Our Team: 
 
-**Ayman Sulaiman
-Andrew Wright
-Aldo Garcia
-Hakob Harutyunyan**
+**Ayman Sulaiman**
+**Andrew Wright**
+**Aldo Garcia**
+**Hakob Harutyunyan**
