@@ -14,6 +14,7 @@ import dash_bootstrap_components as dbc
 import tableau_graphs as tg
 
 
+# external_stylesheets = ['https://raw.githubusercontent.com/plotly/dash-app-stylesheets/master/dash-oil-and-gas.css']
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -34,7 +35,7 @@ lost_xgboost_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-e
 
 total_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/total.csv') 
 train_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/train.csv')
-test_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/test.csv')
+test_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/total.csv')
 
 app.layout = html.Div(children=[
     html.H1(children='Stalion Statistics'),
@@ -43,10 +44,12 @@ app.layout = html.Div(children=[
         A web dashboard for horse racing stats
     '''),
 
+    html.H4(children='Data'),
+
     html.Div([
-        html.H4(children='horse racing data_1'),
+        
         dash_table.DataTable(
-            id='table',
+            id='table_total',
             columns=[{"name": i, "id": i} for i in total_df.columns],
             data=total_df.to_dict('records'),
             style_table={
@@ -57,12 +60,46 @@ app.layout = html.Div(children=[
         
     ],style={'display': 'inline-block'}),
     
+
+    html.H4(children='Training Dataset'),
+
+    html.Div([
+        
+        dash_table.DataTable(
+            id='table_training',
+            columns=[{"name": i, "id": i} for i in train_df.columns],
+            data=train_df.to_dict('records'),
+            style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+            },
+        )
+        
+    ],style={'display': 'inline-block'}),
+
+    html.H4(children='Testing Dataset'),
+
+    html.Div([
+        
+        dash_table.DataTable(
+            id='table_test',
+            columns=[{"name": i, "id": i} for i in test_df.columns],
+            data=test_df.to_dict('records'),
+            style_table={
+                'maxHeight': '400px',
+                'overflowY': 'scroll'
+            },
+        )
+        
+    ],style={'display': 'inline-block'}),
+
+    
     html.Div([
         html.Div([
             html.H2(children='''
             SVM Classification
             '''),
-            html.Iframe(srcDoc=notebook_html.svm, width="600px", height="700px", style={'border':0}),
+            html.Iframe(srcDoc=notebook_html.svm, width="600px", height="700px", style={'border':0},className="pretty_container"),
             html.H3(children=f'''
             SVM Correct Winning Prediction
             Count: {len(won_svm_df)}
@@ -74,7 +111,7 @@ app.layout = html.Div(children=[
                 style_table={
                 'maxHeight': '400px',
                 'overflowY': 'scroll'
-                },
+            },  
             ),
             
             html.H3(children=f'''
@@ -99,7 +136,7 @@ app.layout = html.Div(children=[
             html.H2(children='''
             Import the code here and it's score and/or classification report
             '''),
-            html.Iframe(srcDoc=notebook_html.xgboost,width="480px", height="920px", style={'border':0}),
+            html.Iframe(srcDoc=notebook_html.xgboost,width="600px", height="700px", style={'border':0}),
             html.H3(children=f'''
             XGBoost Correct Winning Prediction
             Count: {len(won_xgboost_df)}
@@ -127,6 +164,7 @@ app.layout = html.Div(children=[
                 },
             ),
         ]),
+        html.Br(),
         html.Div([
             html.H2(children='''
             Naive Bayes Gaussian Classification
@@ -134,7 +172,7 @@ app.layout = html.Div(children=[
             html.H2(children='''
             Import the code here and it's score and/or classification report
             '''),
-            html.Iframe(srcDoc=notebook_html.gaussian,width="480px", height="920px", style={'border':0}),
+            html.Iframe(srcDoc=notebook_html.gaussian,width="600px", height="700px", style={'border':0}),
             html.H3(children=f'''
             Naive-Bayes Correct Winning Prediction
             Count: {len(won_gaussian_df)}
@@ -166,9 +204,10 @@ app.layout = html.Div(children=[
 
     
     html.H2(children='''
-            Dashbooard 1
+            Dashboard 1
             '''),
 
+    html.Br(),
     html.Div([
         html.Iframe(srcDoc=tg.dashboard_1, width="1600px", height="900px", style={'border':0})
     ],style={'display': 'inline-block', 'width':'auto'}),

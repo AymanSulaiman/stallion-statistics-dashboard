@@ -1,6 +1,5 @@
 Date,Race,Name,Weight,Age,Days off,Number of Wins,Power Rating,Average Class Rating,Average Speed,Won,Won SVM,Won XGBoost,Won GaussianNB
 2020-06-14,6,guska mon shoes,118,10,15,11,74.4,96,85,1,0,1,1
-2020-06-27,2,frost or frippery,123,7,36,12,92.0,95,92,1,0,0,1
-2020-06-27,9,midnight bisou,124,5,118,11,107.2,112,111,1,0,1,1
-2020-06-27,10,tom's d'etat,124,7,76,10,111.2,115,109,1,0,1,1
-2020-06-27,10,tom's d'etat,124,7,76,10,111.2,115,109,1,0,1,1
+2020-06-27,2,frost or frippery,123,7,36,12,92.0,95,92,1,0,1,1
+2020-06-27,9,midnight bisou,124,5,118,11,107.2,112,111,1,1,1,1
+2020-06-27,10,tom's d'etat,124,7,76,10,111.2,115,109,1,1,1,1
