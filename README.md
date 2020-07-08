@@ -1,4 +1,4 @@
-# Stallion-Statistics-Dashboard
+# Stallion-Statistics - Racing Insights
 
 ![Screenshot](Stallion_Statistics.png)
 
