@@ -315,7 +315,7 @@ app.layout = html.Div(children=[
             html.A(children='''
             Resume
             ''', 
-            href='https://drive.google.com/file/d/1NXci3kPUlxHqQ8PDRxlInGBnUZYTSNlp/view?usp=sharing',
+            href='https://drive.google.com/file/d/1fTXLLdK0Dsl7DgSJ7lotqItGaf9N4C9-/view?usp=sharing',
             target='_blank'
             ),
 
@@ -402,9 +402,21 @@ app.layout = html.Div(children=[
 
         ], className="pretty_container six columns")
     ], className="flex-display row pretty-container"),
+    html.Br(),
+
+    html.A(children='''
+        GitHub Repo
+        ''', 
+        href='''
+        https://github.com/AymanSulaiman/stallion-statistics-dashboard
+        ''',
+        target='_blank'
+    ),
+    
     html.H2(children='''
         Built in Python, made with ❤️
     '''),
+
 ], style={'textAlign': 'center'})
 
 
