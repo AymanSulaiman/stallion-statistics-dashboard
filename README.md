@@ -30,6 +30,7 @@ Retrieved the data from a reputable betting betting brand via SQL
 - Matplotlib
 - HTML
 - SQL 
+- AWS
 
 
 
