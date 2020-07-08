@@ -11,6 +11,21 @@
 
 **Objective:**
 
-Our goal as a team is the provide racing insights on both previous and upcoming races for the Churchill Downs racetrack. Even more in depth, using different programming languages and machine learning, we have created multiple ML models. These models can predict whether a horse is going to win or not. 
+Our goal as a team is the provide racing insights on both previous and upcoming races for the Churchill Downs racetrack. Even more in depth, using different programming languages and machine learning, we have created multiple ML models. These models can predict whether a horse is going to win or lose. 
+
+**Programming Languages/Technology Used:**
+
+- Python
+- Machine Learning
+- Javascript
+- Tableau
+- Dash
+- Matplotlib
+- HTML
+- SQL 
+
+
+
+
 
 
