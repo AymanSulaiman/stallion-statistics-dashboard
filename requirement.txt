@@ -1,0 +1,26 @@
+### so this is the requirements page
+dash
+dash_core_components
+dash_html_components
+dash_table
+plotly
+pytz
+six
+traitlets
+Werkzeug
+pandas
+numpy 
+Flask
+matplotlib
+Click
+dash-renderer
+Flask-Compress
+gunicorn
+html5lib
+idna
+ipython-genutils
+itsdangerous
+Jinja2
+jupyter-core
+MarkupSafe
+nbformat
