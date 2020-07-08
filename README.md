@@ -15,10 +15,10 @@ Our goal as a team is the provide racing insights on both previous and upcoming 
 
 **Methods:**
 
-Retrieved the data from a reputable betting betting brand via SQL 
+Retrieved the data from a reputable betting betting brand via SQL.  We cleaned the data with Pandas and stored the clean data into and S3 Bucket.  The cleaned data was then placed into a tableau workspace to preform analytics to gain actual insights into the data.  The clean data was also put through Machine Learning Algorithms to see what model would be the most reliable giving us true results.  The results were analysed for accuracy and precision. 
 
+**Link to our [website](https://stallion-stats.herokuapp.com/)**
 
-**Results**
 
 **Programming Languages/Technology Used:**
 
@@ -30,7 +30,7 @@ Retrieved the data from a reputable betting betting brand via SQL
 - Matplotlib
 - HTML
 - SQL 
-- AWS
+- AWS S3
 
 
 

@@ -315,7 +315,7 @@ app.layout = html.Div(children=[
             html.A(children='''
             Resume
             ''', 
-            href='https://drive.google.com/file/d/1fTXLLdK0Dsl7DgSJ7lotqItGaf9N4C9-/view?usp=sharing',
+            href='https://drive.google.com/file/d/1o238OMrOX6QuVs-fZ9jS4YN77rKIAWFC/view?usp=sharing',
             target='_blank'
             ),
 
