@@ -218,7 +218,7 @@ Pygments==2.6.1
 pylint==2.4.4
 pymongo==3.10.1
 # PyNaCl @ file:///C:/ci/pynacl_1593121837095/work
-pyodbc===4.0.0-unsupported
+# pyodbc===4.0.0-unsupported
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
 pyreadline==2.1
