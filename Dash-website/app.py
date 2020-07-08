@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 from dash.dependencies import Input, Output
 import notebook_html 
-import dash_bootstrap_components as dbc
+# import dash_bootstrap_components as dbc
 import tableau_graphs as tg
 
 
@@ -39,14 +39,14 @@ nb_ml_al_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-
 
 app.layout = html.Div(children=[
     html.Div(
-        html.Img(src='https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/stallion_statistics_logo.png')
+        html.Img(src='https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/stallion_statistics_logo.png',style={'height':'30%', 'width':'30%'})
     ),
 
-    html.H1(children='Stallion Statistics'),
+    # html.H1(children='Stallion Statistics'),
 
-    html.H2(children='''
-        A web dashboard for horse racing stats
-    '''),
+    # html.H2(children='''
+    #     A web dashboard for horse racing stats
+    # '''),
 
     html.H4(children='Data'),
 
