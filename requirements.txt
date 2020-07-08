@@ -24,7 +24,7 @@ binaryornot==0.4.4
 bitarray==1.2.2
 bkcharts==0.2
 bleach==3.1.5
-bokeh @ file:///C:/ci/bokeh_1593179283802/work
+# bokeh @ file:///C:/ci/bokeh_1593179283802/work
 boto==2.49.0
 Bottleneck==1.3.2
 Brotli==1.0.7
