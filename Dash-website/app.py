@@ -14,7 +14,7 @@ import dash_bootstrap_components as dbc
 import tableau_graphs as tg
 
 
-# external_stylesheets = ['https://raw.githubusercontent.com/plotly/dash-app-stylesheets/master/dash-oil-and-gas.css']
+# external_stylesheets = ['https://raw.githubusercontent.com/plotly/dash-sample-apps/master/apps/dash-oil-and-gas/assets/s1.css']
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -38,6 +38,10 @@ nb_ml_al_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-
 
 
 app.layout = html.Div(children=[
+    html.Div(
+        html.Img(src='https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/stallion_statistics_logo.png')
+    ),
+
     html.H1(children='Stallion Statistics'),
 
     html.H2(children='''
@@ -67,7 +71,7 @@ app.layout = html.Div(children=[
             html.H2(children='''
             SVM Classification
             '''),
-            html.Iframe(srcDoc=notebook_html.svm, width="800px", height="850px", style={'border':0},className="pretty_container"),
+            html.Iframe(srcDoc=notebook_html.svm, width="800px", height="860px", style={'border':0},className="pretty_container"),
             html.Br(),
             html.H3(children=f'''
             SVM Correct Winning Prediction and Actual
