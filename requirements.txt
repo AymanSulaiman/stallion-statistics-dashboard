@@ -204,7 +204,7 @@ poyo==0.5.0
 prometheus-client==0.8.0
 prompt-toolkit==3.0.5
 prophet==0.1.1.post1
-protobuf==3.12.3
+# protobuf==3.12.3
 psutil==5.7.0
 # py @ file:///tmp/build/80754af9/py_1593446248552/work
 pycodestyle==2.5.0
