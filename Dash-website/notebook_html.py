@@ -13040,11 +13040,6 @@ div#notebook {
   }
 }
 </style>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Training-the-SVM-model-and-finding-a-score">Training the SVM model and finding a score<a class="anchor-link" href="#Training-the-SVM-model-and-finding-a-score">&#182;</a></h3>
 </div>
@@ -13052,24 +13047,35 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="n">average_precision_score</span>
 
-<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span> 
+<span class="c1"># Creating and fitting the model with the training dataset</span>
+<span class="c1"># Choosing the sigmoid kernal</span>
 <span class="n">model_svm</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)</span>
-<span class="n">model_svm</span>
 <span class="n">model_svm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="n">train_score_svm</span> <span class="o">=</span> <span class="n">model_svm</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Finding the predicted values based on the X test dataset </span>
+<span class="n">y_pred_svm</span> <span class="o">=</span> <span class="n">model_svm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Finding the r2 score </span>
 <span class="n">test_score_svm</span> <span class="o">=</span> <span class="n">model_svm</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">predictions_svm</span> <span class="o">=</span> <span class="n">model_svm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="c1"># Finding the accuracy score</span>
+<span class="n">accuracy_score_svm</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svm</span><span class="p">)</span>
+<span class="c1"># Finding the balanced accuracy score</span>
+<span class="n">bal_acc_score_svm</span> <span class="o">=</span> <span class="n">balanced_accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svm</span><span class="p">)</span>
+<span class="c1"># Finding the average precision score  </span>
+<span class="n">avg_prec_score_svm</span> <span class="o">=</span> <span class="n">average_precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svm</span><span class="p">)</span>
+
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">R</span><span class="se">\u00b2</span><span class="s1"> Scores</span>
-<span class="s1">-----------------------</span>
-<span class="s1">Training Score: </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">train_score_svm</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
-<span class="s1">Test Score:     </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">test_score_svm</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">R</span><span class="se">\u00b2</span><span class="s1"> Score:                 </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">test_score_svm</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Predicted accuracy score: </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score_svm</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Balanced accuracy score:  </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">bal_acc_score_svm</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Avg precision score:      </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_prec_score_svm</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -13088,10 +13094,10 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-R² Scores
------------------------
-Training Score: 82.44%
-Test Score:     87.83%
+R² Score:                 84.76%
+Predicted accuracy score: 84.76%
+Balanced accuracy score:  48.83%
+Avg precision score:      11.24%
 
 </pre>
 </div>
@@ -13110,12 +13116,12 @@ Test Score:     87.83%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions_svm</span><span class="p">,</span>
-                            <span class="n">target_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">,</span> <span class="s2">&quot;lost&quot;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svm</span><span class="p">,</span>
+                            <span class="n">target_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;won&quot;</span><span class="p">,</span> <span class="s2">&quot;lost&quot;</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -13134,12 +13140,12 @@ Test Score:     87.83%
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>              precision    recall  f1-score   support
 
-         win       0.91      0.97      0.94      1813
-        lost       0.05      0.02      0.02       184
+         won       0.88      0.95      0.92      1006
+        lost       0.06      0.02      0.03       129
 
-    accuracy                           0.88      1997
-   macro avg       0.48      0.49      0.48      1997
-weighted avg       0.83      0.88      0.85      1997
+    accuracy                           0.85      1135
+   macro avg       0.47      0.49      0.48      1135
+weighted avg       0.79      0.85      0.82      1135
 
 </pre>
 </div>
@@ -13162,9 +13168,30 @@ weighted avg       0.83      0.88      0.85      1997
 ############################################################################################################################################################################################
 ############################################################################################################################################################################################
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 xgboost = '''
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
@@ -26205,11 +26232,6 @@ div#notebook {
   }
 }
 </style>
-</div>
-</div>
-</div>
-
-
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Training-the-XGBoost-Classifier-and-finding-a-score">Training the XGBoost Classifier and finding a score<a class="anchor-link" href="#Training-the-XGBoost-Classifier-and-finding-a-score">&#182;</a></h3>
 </div>
@@ -26217,26 +26239,34 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="n">average_precision_score</span><span class="p">,</span> <span class="n">r2_score</span>
+<span class="c1"># Creating and fitting the model with the training dataset</span>
 <span class="n">model_XGB</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">()</span>
 <span class="n">model_XGB</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="c1"># make predictions for test data</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model_XGB</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-<span class="n">predictions_XGB</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 
-<span class="n">accuracy_XGB</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions_XGB</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy score for testing&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Testing Accuracy: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_XGB</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mf">100.0</span><span class="si">}</span><span class="s2">%&quot;</span>  <span class="p">)</span>
+<span class="c1"># Finding the predicted values based on the X test dataset</span>
+<span class="n">y_pred_XGB</span> <span class="o">=</span> <span class="n">model_XGB</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
-<span class="n">scores_XGB</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model_XGB</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cross Validation for Training&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training Accuracy: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_XGB</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+<span class="c1"># Finding the r2 score </span>
+<span class="n">r2_score_XGB</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_XGB</span><span class="p">)</span>
+<span class="c1"># Finding the accuracy score </span>
+<span class="n">accuracy_score_XGB</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_XGB</span><span class="p">)</span>
+<span class="c1"># Finding the balanced accuracy score</span>
+<span class="n">bal_acc_score_XGB</span> <span class="o">=</span> <span class="n">balanced_accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_XGB</span><span class="p">)</span>
+<span class="c1"># Finding average precision r2 score </span>
+<span class="n">avg_prec_score_XGB</span> <span class="o">=</span> <span class="n">average_precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_XGB</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">R</span><span class="se">\u00b2</span><span class="s1"> Score:                </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">r2_score_XGB</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Predicted accuracy score: </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score_XGB</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Balanced accuracy score:  </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">bal_acc_score_XGB</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Avg precision score:      </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_prec_score_XGB</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -26253,10 +26283,12 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy score for testing
-Testing Accuracy: 92.34%
-Cross Validation for Training
-Training Accuracy: 92.34%
+<pre>
+R² Score:                -19.82%
+Predicted accuracy score: 87.9%
+Balanced accuracy score:  53.66%
+Avg precision score:      13.8%
+
 </pre>
 </div>
 </div>
@@ -26265,14 +26297,21 @@ Training Accuracy: 92.34%
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="XGBoost-Classification-Report">XGBoost Classification Report<a class="anchor-link" href="#XGBoost-Classification-Report">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions_XGB</span><span class="p">,</span>
-                            <span class="n">target_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">,</span> <span class="s2">&quot;lost&quot;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_XGB</span><span class="p">,</span>
+                            <span class="n">target_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;won&quot;</span><span class="p">,</span> <span class="s2">&quot;lost&quot;</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -26291,12 +26330,12 @@ Training Accuracy: 92.34%
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>              precision    recall  f1-score   support
 
-         win       0.92      1.00      0.96      1813
-        lost       1.00      0.17      0.29       184
+         won       0.89      0.98      0.94      1006
+        lost       0.38      0.09      0.15       129
 
-    accuracy                           0.92      1997
-   macro avg       0.96      0.58      0.62      1997
-weighted avg       0.93      0.92      0.90      1997
+    accuracy                           0.88      1135
+   macro avg       0.63      0.54      0.54      1135
+weighted avg       0.83      0.88      0.85      1135
 
 </pre>
 </div>
@@ -39359,10 +39398,6 @@ div#notebook {
   }
 }
 </style>
-</div>
-</div>
-</div>
-
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -39372,25 +39407,32 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="n">average_precision_score</span><span class="p">,</span> <span class="n">r2_score</span>
+<span class="c1"># Creating and fitting the model with the training dataset</span>
 <span class="n">model_nb</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
 <span class="n">model_nb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 
-<span class="n">train_score_nb</span> <span class="o">=</span> <span class="n">model_nb</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="n">test_score_nb</span> <span class="o">=</span> <span class="n">model_nb</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="c1"># Finding the predicted values based on the X test dataset</span>
+<span class="n">y_pred_nb</span> <span class="o">=</span> <span class="n">model_nb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="n">predictions_nb</span> <span class="o">=</span> <span class="n">model_nb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-<span class="n">model_nb</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">predictions_nb</span><span class="p">)</span>
+<span class="c1"># Finding the r2 score </span>
+<span class="n">test_score_nb</span> <span class="o">=</span> <span class="n">model_nb</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="c1"># Finding the accuracy score </span>
+<span class="n">accuracy_score_nb</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_nb</span><span class="p">)</span>
+<span class="c1"># Finding balanced accuracy score </span>
+<span class="n">bal_acc_score_nb</span> <span class="o">=</span> <span class="n">balanced_accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_nb</span><span class="p">)</span>
+<span class="c1"># Finding the average precision score </span>
+<span class="n">avg_prec_score_nb</span> <span class="o">=</span> <span class="n">average_precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_nb</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">R</span><span class="se">\u00b2</span><span class="s1"> Scores</span>
-<span class="s1">-----------------------</span>
-<span class="s1">Training Score: </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">train_score_nb</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
-<span class="s1">Test Score:     </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">test_score_nb</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">R</span><span class="se">\u00b2</span><span class="s1"> Score:                </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">test_score_nb</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Accuracy Score:          </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score_nb</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Balance Accuracy Score:  </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_prec_score_nb</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Average Precision Score: </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_prec_score_nb</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -39409,10 +39451,10 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-R² Scores
------------------------
-Training Score: 88.91%
-Test Score:     89.58%
+R² Score:                84.93%
+Accuracy Score:          84.93%
+Balance Accuracy Score:  12.9998%
+Average Precision Score: 12.9998%
 
 </pre>
 </div>
@@ -39422,13 +39464,20 @@ Test Score:     89.58%
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Naive-Bayes-Classification-Report">Naive-Bayes Classification Report<a class="anchor-link" href="#Naive-Bayes-Classification-Report">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions_nb</span><span class="p">,</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_nb</span><span class="p">,</span>
                             <span class="n">target_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">,</span> <span class="s2">&quot;lost&quot;</span><span class="p">]))</span>
 </pre></div>
 
@@ -39448,12 +39497,12 @@ Test Score:     89.58%
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>              precision    recall  f1-score   support
 
-         win       0.91      0.98      0.94      1813
-        lost       0.15      0.03      0.05       184
+         win       0.89      0.94      0.92      1006
+        lost       0.23      0.14      0.17       129
 
-    accuracy                           0.90      1997
-   macro avg       0.53      0.51      0.50      1997
-weighted avg       0.84      0.90      0.86      1997
+    accuracy                           0.85      1135
+   macro avg       0.56      0.54      0.55      1135
+weighted avg       0.82      0.85      0.83      1135
 
 </pre>
 </div>
