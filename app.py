@@ -18,6 +18,7 @@ import tableau_graphs as tg
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 total_df = pd.read_csv('https://horse-racing-data-churchill-downs.s3.us-east-2.amazonaws.com/total.csv')
 
