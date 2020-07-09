@@ -275,7 +275,7 @@ app.layout = html.Div(children=[
 
     html.Br(),
     html.H2(children='''
-            Dashboard 1
+            Horse Ratings
             '''),
 
     html.Br(),
@@ -284,7 +284,7 @@ app.layout = html.Div(children=[
     ],style={'display': 'inline-block', 'width':'auto'}),
     html.Br(),
     html.H2(children='''
-            Dashboard 2
+            Class Rating
             '''),
     html.Br(),
     html.Div([

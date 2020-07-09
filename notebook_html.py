@@ -13040,6 +13040,50 @@ div#notebook {
   }
 }
 </style>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">train</span><span class="p">[</span><span class="n">features</span><span class="p">]</span>
+<span class="n">y_train</span> <span class="o">=</span> <span class="n">train</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="n">features</span><span class="p">]</span>
+<span class="n">y_test</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="n">target</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Machine-Learning-Models">Machine Learning Models<a class="anchor-link" href="#Machine-Learning-Models">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="SVM">SVM<a class="anchor-link" href="#SVM">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Training-the-SVM-model-and-finding-a-score">Training the SVM model and finding a score<a class="anchor-link" href="#Training-the-SVM-model-and-finding-a-score">&#182;</a></h3>
 </div>
@@ -26232,6 +26276,8 @@ div#notebook {
   }
 }
 </style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Training-the-XGBoost-Classifier-and-finding-a-score">Training the XGBoost Classifier and finding a score<a class="anchor-link" href="#Training-the-XGBoost-Classifier-and-finding-a-score">&#182;</a></h3>
 </div>
@@ -39431,7 +39477,7 @@ div#notebook {
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
 <span class="s1">R</span><span class="se">\u00b2</span><span class="s1"> Score:                </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">test_score_nb</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
 <span class="s1">Accuracy Score:          </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score_nb</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
-<span class="s1">Balance Accuracy Score:  </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_prec_score_nb</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
+<span class="s1">Balance Accuracy Score:  </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">bal_acc_score_nb</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
 <span class="s1">Average Precision Score: </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_prec_score_nb</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span><span class="s1">%</span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
@@ -39453,7 +39499,7 @@ div#notebook {
 <pre>
 R² Score:                84.93%
 Accuracy Score:          84.93%
-Balance Accuracy Score:  12.9998%
+Balance Accuracy Score:  53.994600000000005%
 Average Precision Score: 12.9998%
 
 </pre>
