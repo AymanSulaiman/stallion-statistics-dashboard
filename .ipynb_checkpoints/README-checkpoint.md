@@ -19,14 +19,7 @@ Retrieved the data from a reputable betting betting brand via SQL.  We cleaned t
 
 **ROI Analysis**
 
-We found the Naive-Bayes model returned the highest ROI for the $2 bet simulation. While the XGBoost model returned the highest win rate, it's selected horses were lower on the odds spectrum, producing lower winnings as a result. The Naive-Bayes 23.1% win rate and ROI of -21.9% was the most successful of the three.
-
-<img src="ROI_analysis.png" alt="drawing" height="600px"/>
-
-**Next Steps**
-- Running a probabilty model for a horse to get into 3 places in a race
-- Applying a Neural Network/ AI with TensorFlow
-- More Experimentation with more features with larger datasets
+![ROI_analysis](ROI_analysis.png)
 
 **Link to our [website](https://stallion-stats.herokuapp.com/)**
 
