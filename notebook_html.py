@@ -26287,7 +26287,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-R² Score:                -19.82%
+R² Score:                 19.82%
 Predicted accuracy score: 87.9%
 Balanced accuracy score:  53.66%
 Avg precision score:      13.8%
